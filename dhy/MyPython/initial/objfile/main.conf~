@@ -1,0 +1,15 @@
+[func1]
+ParaType = long int,float
+ParaNum = 2   
+ReturnType = none
+
+[func2]
+ParaType = float,long int,float,long int,m
+ParaNum = 4
+ReturnType = none
+
+[func3]
+ParaType = long int,int,char
+ParaNum = 3
+ReturnType = none
+

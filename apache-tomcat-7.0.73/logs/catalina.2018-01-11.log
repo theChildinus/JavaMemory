@@ -1,0 +1,1846 @@
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 9:38:12 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 9:38:12 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 9:38:13 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 9:38:13 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 9:38:13 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1251 ms
+一月 11, 2018 9:38:13 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 9:38:13 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 9:38:13 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 9:38:14 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 9:38:14 上午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 9:38:15 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,738 ms
+一月 11, 2018 9:38:15 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 9:38:19 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 16,018 ms
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 47 ms
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 65 ms
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 43 ms
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 58 ms
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 319 ms
+一月 11, 2018 9:38:31 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 9:38:31 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 9:38:31 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 18450 ms
+一月 11, 2018 9:38:53 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 9:38:53 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 9:38:53 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 9:38:53 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 9:38:54 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 9:38:54 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 9:38:54 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 9:38:54 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 9:38:54 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 9:38:54 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 9:41:31 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 9:41:31 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 9:41:32 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 9:41:32 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 9:41:32 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1020 ms
+一月 11, 2018 9:41:32 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 9:41:32 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 9:41:32 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 9:41:33 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 9:41:54 上午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [21,476] milliseconds.
+一月 11, 2018 9:41:55 上午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 9:41:55 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 23,006 ms
+一月 11, 2018 9:41:55 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 9:41:59 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 9:42:03 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 8,165 ms
+一月 11, 2018 9:42:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 9:42:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 47 ms
+一月 11, 2018 9:42:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 9:42:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 153 ms
+一月 11, 2018 9:42:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 9:42:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 55 ms
+一月 11, 2018 9:42:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 9:42:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 72 ms
+一月 11, 2018 9:42:03 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 9:42:04 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 317 ms
+一月 11, 2018 9:42:04 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 9:42:04 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 9:42:04 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 31963 ms
+一月 11, 2018 9:50:11 上午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 9:50:11 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 9:50:11 上午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 9:50:12 上午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 9:50:12 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 9:50:12 上午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 9:50:12 上午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@561efb65]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@c0ad00f]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 9:50:12 上午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@19e18ef6]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2c045773]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 9:50:12 上午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@561efb65]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@5cc6d47a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 9:50:12 上午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@19e18ef6]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2c045773]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 9:50:13 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 9:50:13 上午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 9:50:13 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 9:50:13 上午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 10:07:02 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 10:07:02 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 10:07:02 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 10:07:02 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 933 ms
+一月 11, 2018 10:07:03 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 10:07:03 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 10:07:03 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 10:07:04 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 10:07:04 上午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 10:07:04 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,585 ms
+一月 11, 2018 10:07:04 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/schoolServiceProj.war
+一月 11, 2018 10:07:04 上午 org.apache.catalina.deploy.WebXml setVersion
+警告: Unknown version string [3.1]. Default version will be used.
+一月 11, 2018 10:07:05 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 10:07:05 上午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 10:07:05 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/schoolServiceProj.war has finished in 618 ms
+一月 11, 2018 10:07:05 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 10:07:09 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 8,969 ms
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 50 ms
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 84 ms
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 71 ms
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 106 ms
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 399 ms
+一月 11, 2018 10:07:14 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 10:07:14 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 10:07:14 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 12047 ms
+一月 11, 2018 1:18:27 下午 org.apache.catalina.startup.HostConfig undeploy
+信息: Undeploying context [/schoolServiceProj]
+一月 11, 2018 1:18:36 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 1:18:36 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 1:18:36 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 1:18:36 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 1:18:37 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 1:18:37 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 1:18:37 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 1:18:37 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 1:18:37 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 1:18:37 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 1:18:40 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 1:18:40 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 1:18:40 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 1:18:40 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1022 ms
+一月 11, 2018 1:18:41 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 1:18:41 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 1:18:41 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 1:18:42 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 1:18:42 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 1:18:42 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,514 ms
+一月 11, 2018 1:18:42 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 1:18:47 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 1:18:50 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 8,231 ms
+一月 11, 2018 1:18:50 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 1:18:50 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 53 ms
+一月 11, 2018 1:18:50 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 1:18:50 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 61 ms
+一月 11, 2018 1:18:50 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 1:18:50 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 43 ms
+一月 11, 2018 1:18:50 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 1:18:51 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 59 ms
+一月 11, 2018 1:18:51 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 1:18:51 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 313 ms
+一月 11, 2018 1:18:51 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 1:18:51 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 1:18:51 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 10413 ms
+一月 11, 2018 1:54:16 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 1:54:16 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 1:54:16 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 1:54:16 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 1:54:16 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 1:54:16 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 1:54:16 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 1:54:16 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 1:54:16 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 1:54:16 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 1:54:38 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 1:54:38 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 1:54:38 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1051 ms
+一月 11, 2018 1:54:38 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 1:54:38 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 1:54:38 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 1:54:39 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 1:54:39 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 1:54:39 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,528 ms
+一月 11, 2018 1:54:39 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 1:54:43 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 1:54:53 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 13,556 ms
+一月 11, 2018 1:54:53 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 1:54:53 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 71 ms
+一月 11, 2018 1:54:53 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 1:54:53 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 77 ms
+一月 11, 2018 1:54:53 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 1:54:53 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 48 ms
+一月 11, 2018 1:54:53 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 1:54:53 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 63 ms
+一月 11, 2018 1:54:53 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 1:54:54 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 271 ms
+一月 11, 2018 1:54:54 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 1:54:54 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 1:54:54 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 15749 ms
+一月 11, 2018 2:01:30 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 2:01:30 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:01:30 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:01:30 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 2:01:31 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 2:01:31 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 2:01:31 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4a09cdba]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@4fda874d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:01:31 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@f0ff44d]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@606ff2f4]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:01:31 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4a09cdba]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@4fda874d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:01:31 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@f0ff44d]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@55b7a2a2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:01:31 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4a09cdba]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@4fda874d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:01:31 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@f0ff44d]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@b1665a5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:01:31 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:01:31 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:01:31 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:01:31 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:03:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 2:03:29 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 2:03:30 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:03:30 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:03:30 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1033 ms
+一月 11, 2018 2:03:30 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 2:03:30 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 2:03:30 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 2:03:31 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 2:03:31 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 2:03:31 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,488 ms
+一月 11, 2018 2:03:31 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 2:03:36 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 2:03:41 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 10,135 ms
+一月 11, 2018 2:03:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 2:03:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 55 ms
+一月 11, 2018 2:03:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 2:03:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 96 ms
+一月 11, 2018 2:03:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 2:03:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 48 ms
+一月 11, 2018 2:03:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 2:03:42 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 75 ms
+一月 11, 2018 2:03:42 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 2:03:42 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 320 ms
+一月 11, 2018 2:03:42 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:03:42 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:03:42 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 12355 ms
+一月 11, 2018 2:08:11 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 2:08:11 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:08:11 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:08:11 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@45813c1b]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2fa38f3c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@2dfe2f00]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@abfc097]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@45813c1b]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2fa38f3c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@2dfe2f00]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@32fcff04]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@45813c1b]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2fa38f3c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@2dfe2f00]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@7fca79c2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@45813c1b]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2fa38f3c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@2dfe2f00]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@45fff119]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@45813c1b]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2fa38f3c]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:08:13 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@2dfe2f00]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@262dc436]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:08:13 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:08:13 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:08:13 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:08:13 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 2:16:58 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 2:16:58 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:16:58 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1037 ms
+一月 11, 2018 2:16:58 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 2:16:58 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 2:16:58 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 2:16:59 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 2:17:14 下午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [15,180] milliseconds.
+一月 11, 2018 2:17:15 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 2:17:15 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 16,747 ms
+一月 11, 2018 2:17:15 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 2:17:19 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 2:17:25 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 10,158 ms
+一月 11, 2018 2:17:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 2:17:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 66 ms
+一月 11, 2018 2:17:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 2:17:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 87 ms
+一月 11, 2018 2:17:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 2:17:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 61 ms
+一月 11, 2018 2:17:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 2:17:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 83 ms
+一月 11, 2018 2:17:25 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 2:17:26 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 339 ms
+一月 11, 2018 2:17:26 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:17:26 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:17:26 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 27694 ms
+一月 11, 2018 2:19:43 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 2:19:43 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:19:43 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:19:43 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 2:19:44 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 2:19:44 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 2:19:44 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@ec3408]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@1d78b18e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:19:44 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@60f5dd5c]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@2d97f4bf]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:19:44 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@ec3408]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@1d78b18e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:19:44 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@60f5dd5c]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@53453efb]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:19:44 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@ec3408]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@1d78b18e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:19:44 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@60f5dd5c]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@6729fb72]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:19:44 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@ec3408]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@1d78b18e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:19:44 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@60f5dd5c]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@753b2e47]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:19:44 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:19:44 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:19:44 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:19:44 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:24:32 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 2:24:32 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 2:24:33 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:24:33 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:24:33 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1020 ms
+一月 11, 2018 2:24:33 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 2:24:33 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 2:24:33 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 2:24:34 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 2:24:34 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 2:24:34 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,664 ms
+一月 11, 2018 2:24:34 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 2:24:39 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 10,215 ms
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 62 ms
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 90 ms
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 49 ms
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 78 ms
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 326 ms
+一月 11, 2018 2:24:45 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:24:45 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:24:45 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 12644 ms
+一月 11, 2018 2:29:09 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 2:29:09 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:29:09 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:29:09 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@749cb306]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@60b6b528]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5e6ea6b4]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@3282a3db]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@749cb306]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@60b6b528]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5e6ea6b4]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@1ed398c5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@749cb306]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@60b6b528]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5e6ea6b4]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@55d2bd52]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@749cb306]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@60b6b528]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5e6ea6b4]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@7e8b7e82]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@749cb306]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@60b6b528]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5e6ea6b4]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@781ec9b5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@749cb306]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@60b6b528]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5e6ea6b4]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@2d4cc7af]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@749cb306]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@60b6b528]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5e6ea6b4]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@bc9c965]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@749cb306]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@60b6b528]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5e6ea6b4]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@6cc50bee]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@749cb306]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@60b6b528]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5e6ea6b4]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@7c926e0b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:29:10 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:29:10 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:29:10 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:29:10 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 2:30:17 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 2:30:17 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:30:17 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1349 ms
+一月 11, 2018 2:30:17 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 2:30:17 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 2:30:17 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 2:30:19 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 2:30:19 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 2:30:19 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,773 ms
+一月 11, 2018 2:30:19 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 2:30:23 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 2:30:30 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 10,855 ms
+一月 11, 2018 2:30:30 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 2:30:30 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 88 ms
+一月 11, 2018 2:30:30 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 2:30:30 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 146 ms
+一月 11, 2018 2:30:30 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 2:30:30 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 92 ms
+一月 11, 2018 2:30:30 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 2:30:30 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 97 ms
+一月 11, 2018 2:30:30 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 2:30:31 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 533 ms
+一月 11, 2018 2:30:31 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:30:31 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:30:31 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 13800 ms
+一月 11, 2018 2:36:03 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 2:36:03 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:36:03 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:36:03 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 2:36:05 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 2:36:05 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 2:36:05 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@497db9d3]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@db194f6]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:36:05 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@3b8274e7]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@71c90836]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:36:05 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@497db9d3]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@db194f6]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:36:05 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@3b8274e7]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@453a4b96]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:36:05 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@497db9d3]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@db194f6]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:36:05 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@3b8274e7]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@7638885b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 2:36:05 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:36:05 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 2:36:05 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 2:36:05 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 3:05:16 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 3:05:16 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:05:16 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:05:16 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1043 ms
+一月 11, 2018 3:05:17 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 3:05:17 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 3:05:17 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 3:05:18 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 3:05:18 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 3:05:18 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,583 ms
+一月 11, 2018 3:05:18 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 3:05:23 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 3:05:32 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 13,938 ms
+一月 11, 2018 3:05:32 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 3:05:32 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 57 ms
+一月 11, 2018 3:05:32 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 3:05:32 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 82 ms
+一月 11, 2018 3:05:32 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 3:05:32 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 53 ms
+一月 11, 2018 3:05:32 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 3:05:32 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 117 ms
+一月 11, 2018 3:05:32 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 3:05:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 466 ms
+一月 11, 2018 3:05:33 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:05:33 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:05:33 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 16446 ms
+一月 11, 2018 3:07:14 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 3:07:14 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:07:14 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:07:14 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 3:07:15 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 3:07:15 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 3:07:15 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:07:15 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:07:15 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:07:15 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 3:07:41 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 3:07:41 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:07:41 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1006 ms
+一月 11, 2018 3:07:41 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 3:07:41 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 3:07:41 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 3:07:42 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 3:07:42 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 3:07:43 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,533 ms
+一月 11, 2018 3:07:43 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 3:07:47 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 3:07:56 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 13,330 ms
+一月 11, 2018 3:07:56 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 3:07:56 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 47 ms
+一月 11, 2018 3:07:56 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 3:07:56 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 77 ms
+一月 11, 2018 3:07:56 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 3:07:56 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 41 ms
+一月 11, 2018 3:07:56 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 3:07:56 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 81 ms
+一月 11, 2018 3:07:56 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 3:07:57 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 333 ms
+一月 11, 2018 3:07:57 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:07:57 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:07:57 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 15590 ms
+一月 11, 2018 3:10:51 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 3:10:51 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:10:51 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:10:51 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 3:10:52 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 3:10:52 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 3:10:52 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:10:52 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:10:52 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:10:52 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 3:11:03 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 3:11:03 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:11:03 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1038 ms
+一月 11, 2018 3:11:03 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 3:11:03 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 3:11:03 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 3:11:04 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 3:11:05 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 3:11:05 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,400 ms
+一月 11, 2018 3:11:05 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 3:11:08 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 13,013 ms
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 63 ms
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 85 ms
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 60 ms
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 65 ms
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 361 ms
+一月 11, 2018 3:11:18 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:11:18 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:11:18 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 15207 ms
+一月 11, 2018 3:17:21 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 3:17:21 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:17:21 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:17:21 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4456d19e]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@1fdbff1f]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@244a5c90]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2b4a2044]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4456d19e]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@681fcc2a]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@244a5c90]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2b4a2044]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@244a5c90]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2b4a2044]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4456d19e]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@7f950ecd]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@244a5c90]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2b4a2044]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4456d19e]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@12fef62b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4456d19e]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@20d38acb]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@244a5c90]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2b4a2044]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4456d19e]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@203d2643]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@244a5c90]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2b4a2044]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@4456d19e]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@e9b093e]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@244a5c90]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@2b4a2044]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 3:17:22 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:17:22 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:17:22 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:17:22 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 3:20:01 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 3:20:01 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:20:01 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1022 ms
+一月 11, 2018 3:20:01 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 3:20:01 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 3:20:01 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 3:20:02 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 3:20:03 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 3:20:03 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,488 ms
+一月 11, 2018 3:20:03 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 3:20:08 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 3:20:14 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 11,255 ms
+一月 11, 2018 3:20:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 3:20:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 45 ms
+一月 11, 2018 3:20:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 3:20:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 75 ms
+一月 11, 2018 3:20:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 3:20:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 48 ms
+一月 11, 2018 3:20:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 3:20:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 52 ms
+一月 11, 2018 3:20:14 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 3:20:15 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 418 ms
+一月 11, 2018 3:20:15 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:20:15 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:20:15 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 13747 ms
+一月 11, 2018 3:22:38 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 3:22:38 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:22:38 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:22:39 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 3:22:39 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 3:22:39 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 3:22:39 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:22:39 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:22:39 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:22:39 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 3:23:11 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 3:23:11 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:23:11 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1046 ms
+一月 11, 2018 3:23:11 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 3:23:11 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 3:23:11 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 3:23:12 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 3:23:24 下午 org.apache.catalina.util.SessionIdGeneratorBase createSecureRandom
+信息: Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [11,961] milliseconds.
+一月 11, 2018 3:23:25 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 3:23:25 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 13,481 ms
+一月 11, 2018 3:23:25 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 3:23:29 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 3:23:33 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 8,198 ms
+一月 11, 2018 3:23:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 3:23:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 58 ms
+一月 11, 2018 3:23:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 3:23:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 83 ms
+一月 11, 2018 3:23:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 3:23:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 72 ms
+一月 11, 2018 3:23:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 3:23:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 139 ms
+一月 11, 2018 3:23:33 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 3:23:34 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 341 ms
+一月 11, 2018 3:23:34 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 3:23:34 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 3:23:34 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 22528 ms
+一月 11, 2018 4:25:35 下午 org.apache.catalina.startup.HostConfig undeploy
+信息: Undeploying context [/webServiceProj]
+一月 11, 2018 4:25:36 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 4:25:36 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 4:25:36 下午 org.apache.axis.configuration.EngineConfigurationFactoryServlet getServerEngineConfig
+严重: Unable to find config file.  Creating new servlet engine config file: /WEB-INF/server-config.wsdd
+一月 11, 2018 4:25:36 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 4:25:36 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 462 ms
+一月 11, 2018 4:26:16 下午 org.apache.catalina.startup.HostConfig undeploy
+信息: Undeploying context [/webServiceProj]
+一月 11, 2018 4:26:16 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 4:26:16 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 4:26:16 下午 org.apache.axis.configuration.EngineConfigurationFactoryServlet getServerEngineConfig
+严重: Unable to find config file.  Creating new servlet engine config file: /WEB-INF/server-config.wsdd
+一月 11, 2018 4:26:17 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 4:26:17 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 420 ms
+一月 11, 2018 4:26:21 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 4:26:21 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 4:26:21 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 4:26:21 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1b16dc68]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@4f7c19eb]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79e03dbc]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@70f54026]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1b16dc68]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@6bea3f3f]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79e03dbc]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@7609b5d5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1b16dc68]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@39a3d0b2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79e03dbc]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@7780ef7d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1b16dc68]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@6bea3f3f]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79e03dbc]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@31eb34d6]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1b16dc68]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@39a3d0b2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79e03dbc]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@48d9e734]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1b16dc68]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@13a30c5d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79e03dbc]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@59da2c49]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1b16dc68]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@30d04c3b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79e03dbc]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@2919ab5]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1b16dc68]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@39a3d0b2]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79e03dbc]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@2543e264]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1b16dc68]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@13a30c5d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79e03dbc]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@bc42659]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@1b16dc68]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@13a30c5d]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@79e03dbc]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@7ab1a317]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:26:22 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 4:26:22 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 4:26:22 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 4:26:22 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 11, 2018 4:26:29 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 11, 2018 4:26:29 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 4:26:29 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 1042 ms
+一月 11, 2018 4:26:29 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 11, 2018 4:26:29 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 11, 2018 4:26:29 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 11, 2018 4:26:30 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 4:26:30 下午 org.apache.axis.configuration.EngineConfigurationFactoryServlet getServerEngineConfig
+严重: Unable to find config file.  Creating new servlet engine config file: /WEB-INF/server-config.wsdd
+一月 11, 2018 4:26:30 下午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 11, 2018 4:26:30 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 1,484 ms
+一月 11, 2018 4:26:30 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 11, 2018 4:26:36 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 11, 2018 4:26:41 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 10,868 ms
+一月 11, 2018 4:26:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 11, 2018 4:26:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 51 ms
+一月 11, 2018 4:26:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 11, 2018 4:26:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 90 ms
+一月 11, 2018 4:26:41 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 11, 2018 4:26:42 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 58 ms
+一月 11, 2018 4:26:42 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 11, 2018 4:26:42 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 72 ms
+一月 11, 2018 4:26:42 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 11, 2018 4:26:42 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 330 ms
+一月 11, 2018 4:26:42 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 4:26:42 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 4:26:42 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 13091 ms
+一月 11, 2018 4:27:00 下午 org.apache.axis.configuration.EngineConfigurationFactoryServlet getServerEngineConfig
+严重: Unable to find config file.  Creating new servlet engine config file: /WEB-INF/server-config.wsdd
+一月 11, 2018 4:52:13 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+一月 11, 2018 4:52:13 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 4:52:13 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 4:52:13 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+一月 11, 2018 4:52:14 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesJdbc
+严重: The web application [/ode] registered the JDBC driver [org.apache.derby.jdbc.AutoloadedDriver] but failed to unregister it when the web application was stopped. To prevent a memory leak, the JDBC Driver has been forcibly unregistered.
+一月 11, 2018 4:52:14 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [/ode] appears to have started a thread named [Timer-1] but has failed to stop it. This is very likely to create a memory leak.
+一月 11, 2018 4:52:14 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5a611abf]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@12c5ec61]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:52:14 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6d06db1d]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@5d1b84d6]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:52:14 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@5a611abf]) and a value of type [org.apache.derby.iapi.services.context.ContextManager] (value [org.apache.derby.iapi.services.context.ContextManager@12c5ec61]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:52:14 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [/ode] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6d06db1d]) and a value of type [org.apache.xerces.jaxp.DocumentBuilderImpl] (value [org.apache.xerces.jaxp.DocumentBuilderImpl@39ae2d5b]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+一月 11, 2018 4:52:14 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 4:52:14 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["ajp-bio-8009"]
+一月 11, 2018 4:52:14 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-bio-8080"]
+一月 11, 2018 4:52:14 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["ajp-bio-8009"]

@@ -1,0 +1,19 @@
+
+#coding=utf-8
+
+import subprocess
+import re
+
+import sys
+
+import time  
+import os  
+      
+	
+child = subprocess.Popen('sh exec.sh',shell=True,stdout=subprocess.PIPE)
+#child = subprocess.Popen('python test.py',shell=True,stdout=subprocess.PIPE)
+print "***************" 
+
+print child.returncode
+if __name__ == '__main__':
+     	pass

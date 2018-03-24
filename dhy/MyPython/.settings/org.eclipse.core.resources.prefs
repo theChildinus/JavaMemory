@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//initial/strHandle.py=utf-8
+encoding//volatility/plugins/linux/linux_proc_info.py=cp936
+encoding//volatility/plugins/linux/linux_test.py=cp936

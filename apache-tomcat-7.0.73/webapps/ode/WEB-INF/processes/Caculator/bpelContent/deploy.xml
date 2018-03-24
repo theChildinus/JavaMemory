@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy xmlns="http://www.apache.org/ode/schemas/dd/2007/03" xmlns:add.example.ws="http://add.example.ws" xmlns:sample="http://eclipse.org/bpel/sample" xmlns:sub.example.ws="http://sub.example.ws">
+  <process name="sample:CaculatorProcess">
+    <active>true</active>
+    <retired>false</retired>
+    <process-events generate="all"/>
+    <provide partnerLink="client">
+      <service name="sample:CaculatorProcessService" port="CaculatorProcessPort"/>
+    </provide>
+    <invoke partnerLink="addPL">
+      <service name="add.example.ws:AddServiceService" port="AddService"/>
+    </invoke>
+    <invoke partnerLink="subPL">
+      <service name="sub.example.ws:SubServiceService" port="SubService"/>
+    </invoke>
+  </process>
+</deploy>

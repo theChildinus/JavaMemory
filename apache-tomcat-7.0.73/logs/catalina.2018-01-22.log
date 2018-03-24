@@ -1,0 +1,88 @@
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.73
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          Nov 7 2016 21:27:23 UTC
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.73.0
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Linux
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            2.6.32-431.el6.x86_64
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          amd64
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /usr/local/development/jdk1.7.0_79/jre
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.7.0_79-b15
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /root/test/java/apache-tomcat-7.0.73
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /root/test/java/apache-tomcat-7.0.73
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/root/test/java/apache-tomcat-7.0.73/conf/logging.properties
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.endorsed.dirs=/root/test/java/apache-tomcat-7.0.73/endorsed
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/root/test/java/apache-tomcat-7.0.73
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/root/test/java/apache-tomcat-7.0.73
+一月 22, 2018 9:29:29 上午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/root/test/java/apache-tomcat-7.0.73/temp
+一月 22, 2018 9:29:29 上午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: :/usr/local/lib:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib
+一月 22, 2018 9:29:30 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-bio-8080"]
+一月 22, 2018 9:29:30 上午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["ajp-bio-8009"]
+一月 22, 2018 9:29:30 上午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 2657 ms
+一月 22, 2018 9:29:30 上午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+一月 22, 2018 9:29:30 上午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.73
+一月 22, 2018 9:29:30 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war
+一月 22, 2018 9:29:32 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 22, 2018 9:29:32 上午 org.apache.axis.utils.JavaUtils isAttachmentSupported
+警告: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+一月 22, 2018 9:29:32 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/webServiceProj.war has finished in 2,303 ms
+一月 22, 2018 9:29:32 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war
+一月 22, 2018 9:29:39 上午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+一月 22, 2018 9:29:49 上午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /root/test/java/apache-tomcat-7.0.73/webapps/ode.war has finished in 16,404 ms
+一月 22, 2018 9:29:49 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT
+一月 22, 2018 9:29:49 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/ROOT has finished in 71 ms
+一月 22, 2018 9:29:49 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager
+一月 22, 2018 9:29:49 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/host-manager has finished in 83 ms
+一月 22, 2018 9:29:49 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs
+一月 22, 2018 9:29:49 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/docs has finished in 62 ms
+一月 22, 2018 9:29:49 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager
+一月 22, 2018 9:29:49 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/manager has finished in 69 ms
+一月 22, 2018 9:29:49 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples
+一月 22, 2018 9:29:50 上午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /root/test/java/apache-tomcat-7.0.73/webapps/examples has finished in 684 ms
+一月 22, 2018 9:29:50 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-bio-8080"]
+一月 22, 2018 9:29:50 上午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["ajp-bio-8009"]
+一月 22, 2018 9:29:50 上午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 20023 ms
