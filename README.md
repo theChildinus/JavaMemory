@@ -31,7 +31,7 @@ https://github.com/volatilityfoundation/volatility/wiki/Installation
     - sudo apt-get install check-devel
     - sudo apt-get install libvirt-dev
     - ./configure --enable-xen=no
-    - make
+    - make 
     - sudo make install
     - cd tools/pyvmi/
     - sudo python setup.py build
