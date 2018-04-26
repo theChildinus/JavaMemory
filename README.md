@@ -32,6 +32,7 @@ https://github.com/volatilityfoundation/volatility/wiki/Installation
     - sudo apt-get install libvirt-dev
     - ./configure --enable-xen=no
     - make
+    - sudo make install
     - cd tools/pyvmi/
     - sudo python setup.py build
     - sudo python setup.py install
@@ -64,10 +65,10 @@ https://github.com/volatilityfoundation/volatility/wiki/Installation
         1. 将volatility工程拷到虚拟机中
         2. sudo apt-get install dwarfdump
         3. sudo apt-get install build-essential
-        4. sudo apt-get install linux-header-内核版本号
+        4. sudo apt-get install linux-headers-内核版本号
         5. cd volatility/tools/linux 并 make
         6. head module.dwarf
-        7. sudo zip sudo zip volatility/volatility/plugins/overlays/linux/Ubuntu1204.zip volatility/tools/linux/module.dwarf /boot/System.map-内核版本号
+        7. sudo zip volatility/volatility/plugins/overlays/linux/Ubuntu系统版本号_内核版本号.zip volatility/tools/linux/module.dwarf /boot/System.map-内核版本号
         8. 将生成的zip文件拷到宿主机的volatility-2.6/volatility/plugins/overlays/linux目录下 并修改参数  
 # 运行流程
 1. 虚拟机执行命令 java -jar -Xint Test.jar 运行测试程序
