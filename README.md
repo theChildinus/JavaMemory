@@ -1,23 +1,23 @@
 # 宿主机
 ## volatility需要安装的包
-https://github.com/volatilityfoundation/volatility/wiki/Installation
+[volatility github](https://github.com/volatilityfoundation/volatility/wiki/Installation)
 1. **python 2.7**
     - sudo pip install py-bcrypt
     - sudo pip install utils
     - sudo apt-get install python-tk
 2. **distorm3**
-    - https://github.com/gdabah/distorm/releases
+    - [参考官方文档](https://github.com/gdabah/distorm/releases)
     - sudo python setup.py build
     - sudo python setup.py install
 3. **pycrypto-2.6.1**
-    - https://www.dlitz.net/software/pycrypto/
+    - [参考官方文档](https://www.dlitz.net/software/pycrypto/)
     - sudo apt-get install python-dev
     - sudo python setup.py build
     - sudo python setup.py install
 4. **yara**
-    - https://yara.readthedocs.io/en/v3.7.0/gettingstarted.html
+    - [参考官方文档](https://yara.readthedocs.io/en/v3.7.0/gettingstarted.html)
 5. **jpype**
-    - https://github.com/originell/jpype/releases
+    - [参考官方文档](https://github.com/originell/jpype/releases)
 6. **setuptool**
     - pip install setuptool   
 7. **elftools**
@@ -25,7 +25,7 @@ https://github.com/volatilityfoundation/volatility/wiki/Installation
 8. **paramiko**
     - pip install paramiko
 9. **libvmi-0.10.1**
-    - https://github.com/libvmi/libvmi
+    - [官方文档](https://github.com/libvmi/libvmi)
     - ./autogen.sh
     - sudo apt-get install libgnomeui-dev
     - sudo apt-get install check-devel
@@ -42,8 +42,7 @@ https://github.com/volatilityfoundation/volatility/wiki/Installation
 
 # 虚拟机
 1. **Creating a new profile** 
-    - 安装jdk 设置jdk配置
-  https://blog.csdn.net/rflyee/article/details/8989663
+    - [安装jdk 设置jdk配置](https://blog.csdn.net/rflyee/article/details/8989663)
 2. **导入jar包**
     - pyagent.jar 
     - Test.jar
@@ -61,7 +60,7 @@ https://github.com/volatilityfoundation/volatility/wiki/Installation
 # 测试环境
 1. **配置pycharm参数**
     - -l vmi://ubuntu --profile=LinuxUbuntu1604x64 linux_pslist
-    - 若未显示虚拟机进程信息 可能虚拟机内核版本与overlays目录下的压缩包不匹配 uname -a查看内核版本 并执行以下步骤(https://github.com/volatilityfoundation/volatility/wiki/Linux)：
+    - 若未显示虚拟机进程信息 可能虚拟机内核版本与overlays目录下的压缩包不匹配 uname -a查看内核版本 并执行以下步骤，可参考[官方文档](https://github.com/volatilityfoundation/volatility/wiki/Linux)：
         1. 将volatility工程拷到虚拟机中
         2. sudo apt-get install dwarfdump
         3. sudo apt-get install build-essential
@@ -75,3 +74,9 @@ https://github.com/volatilityfoundation/volatility/wiki/Installation
 2. 虚拟机另开终端 执行命令jps 获取jar对应的[线程号] 并执行命令 sudo java -jar pyagent.jar [线程号]
 3. 宿主机 修改编译参数为 -l vmi://ubuntu --profile=LinuxUbuntu1604x64 linux_runtime -p [线程号]
 4. vmi 为虚拟机的名字
+
+# Q & A
+1. 推荐阅读：
+    - [HotSpot Serviceability Agent 实现浅析](https://yq.aliyun.com/articles/20231)
+    - [JVM 内存模型概述](https://blog.csdn.net/justloveyou_/article/details/71189093)
+    - [doc Serviceability Agent](https://docs.oracle.com/javase/jp/8/docs/serviceabilityagent/)
