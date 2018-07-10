@@ -1,5 +1,3 @@
-#!usr/bin/python
-# -*- coding:utf-8 -*-
 # Volatility
 # Copyright (C) 2007-2013 Volatility Foundation
 #
@@ -33,12 +31,8 @@ import volatility.plugins.linux.java.readelf
 import socket
 import time
 import paramiko
-import datetime
-import psutil
-import os
 
 from volatility.plugins.linux.java import readelf
-from volatility.plugins.linux.java.conf import Conf
 
 
 def ssh_cmd(hostname, port, username, password, cmd):
@@ -48,9 +42,6 @@ def ssh_cmd(hostname, port, username, password, cmd):
     client.connect(hostname=hostname, port=port, username=username, password=password)
     stdin, stdout, stderr = client.exec_command(cmd)
     result = stdout.read()
-    error = stderr.read()
-    if error.decode() is not None:
-        print error.decode()
     client.close()
     return result
 
@@ -77,7 +68,7 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         fmt = "<I" if length == 4 else "<Q"
         res = space.read(start, length)
         if not res:
-            # print "waiting", start, length
+            print "waiting", start, length
             return None
         return struct.unpack(fmt, res)[0]
 
@@ -95,7 +86,7 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
 
     def allprocs(self):
         linux_common.set_plugin_members(self)
-        # 获取linux 内核第一个进程 0号进程
+
         init_task_addr = self.addr_space.profile.get_symbol("init_task")
         init_task = obj.Object("task_struct", vm=self.addr_space, offset=init_task_addr)
 
@@ -110,14 +101,12 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         if pidlist:
             pidlist = [int(p) for p in self._config.PID.split(',')]
 
-        #依次获取进程 直到获取参数指定的进程
         tasks = []
         for task in self.allprocs():
             if not pidlist or task.pid in pidlist:
                 tasks.append(task)
         return tasks
 
-    # 地址内存获取
     def read(self, task, addr, num):
         task_space = task.get_process_address_space()
         ans = []
@@ -137,12 +126,7 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         return ans
 
     def render_text(self, outfd, data):
-        # local_conf = Conf()
-        # local_conf.config_no()
-        # local_conf.start()
-        print ">>>>>> render_test >>>>>>"
-        # start JVM, j_test_path is param represent DLL
-        j_test_path = '-Djava.class.path=/home/kong/java memory/JDI_test.jar'
+        j_test_path = '-Djava.class.path=/root/JDI.jar'
         jpype.startJVM(jpype.getDefaultJVMPath(), j_test_path)
         tasks = self.calculate()
 
@@ -153,29 +137,26 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
             raise Exception("no task or wrong pid")
 
         # configuration
-        self.fnames = ['func1', 'func2', 'func3', 'func4']
-        self.vnames = [['x', 'y'], ['x', 'y'], ['x', 'y'], ['x', 'y']]
-        self.vtypes = [[1, 1], [2, 2], [3, 3], [4, 4]]
+        fnames = ['func1', 'func2']
+        vnames = [['x', 'y'], ['x', 'y']]
+        vtypes = [[1, 1], [2, 2]]
 
         # ssh
-        hostname = '10.108.167.30'
+        hostname = '10.108.166.165'
         port = 22
         username = 'root'
         password = '123456'
 
-        cmd = 'java -jar /home/vm/pyagent.jar ' + str(task.pid)
+        cmd = 'java -jar pyagent.jar ' + str(task.pid)
         ssh_res = ssh_cmd(hostname=hostname, port=port, username=username, password=password, cmd=cmd)
         if 'yes' not in ssh_res:
-            print ssh_res.decode()
+            print ssh_res
             raise Exception("no task or wrong pid")
-        else:
-            print 'pyagent.jar return yes'
-        libnames = [] # 共享库名称
-        libbases = [] # 共享库起始地址
+
+        libnames = []
+        libbases = []
         libs = []
         name_set = set()
-        # 获取共享库函数在进程中的虚拟地址映射
-        # vma 虚拟内存空间
         for vma in task.get_proc_maps():
             fname = vma.vm_name(task)
             if fname == "Anonymous Mapping":
@@ -191,8 +172,7 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
 
         for lib in libs:
             if ".so" in lib.name or "java" in lib.name:
-                print "base:", hex(lib.base), "name:", lib.name
-        # 获取子线程tid
+                print "base:", lib.base, "name:", lib.name
         threadsId = []
         for thread in task.threads():
             threadsId.append(long(thread.pid))
@@ -203,15 +183,10 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         self.currentTask = task
         self.libs = libs
         self.symbolDict = {}
-        # read elf function, symbol represent share lib offset
-        symbol = volatility.plugins.linux.java.readelf.read_sym_offset("/home/kong/java memory/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so")
-        self.symbolDict["/home/vm/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so"] = symbol
-
-        # java interface for python
+        symbol = volatility.plugins.linux.java.readelf.read_sym_offset("/usr/local/development/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so")
+        self.symbolDict["/usr/local/development/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so"] = symbol
         PyDump = jpype.JPackage('sun.tools.python').PyDump
         self.PyDump = PyDump
-
-        # python interface for java
         method_dict = {
             'getThreadsId': self.getThreadsId,
             'getLibName': self.getLibName,
@@ -223,12 +198,12 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
 
         # java init
         PyDump.initVM(jp, int(task.pid))
+        first_fp = PyDump.initJavaFirstFPAddress("main", True)
 
-        self.first_fp = PyDump.initJavaFirstFPAddress("main", True)
-        print 'first_fp:', hex(self.first_fp)
+
 
         # event
-        self.event_front_1 = '<xml type="event"'
+        self.event_front_1 = '<xml type="event" name="'
         self.event_front_2 = '">'
         self.event_middle_1 = '<'
         self.event_middle_2 = '>'
@@ -236,137 +211,46 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         self.event_middle_4 = '>'
         self.event_end = '</xml>\r\n\r\n'
 
-        self.client = None
-
-        self.readMemory_time = []
-        self.memoryAnalyze_time = []
-        self.all_time = []
-
-        self.cpuPercent = []
-        self.memPercent = []
-        print "===== START =====", os.getpid()
-
-        # d1 = datetime.datetime.now()
-        # sys_info = psutil.virtual_memory()
-        # process_info = psutil.Process(os.getpid())
-
-        count = 0
-        # d1wait = datetime.datetime.now()
         tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         tcpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         tcpSocket.bind(('', 6666))
         tcpSocket.listen(5)
-        try:
-            print "waiting for connection..."
-            self.client, addr = tcpSocket.accept()
-            print "...connected from:", addr
-            # self.conf = Conf()
-            # self.conf.config(self.run_command, self.stop_command)
-            # self.conf.start()
-        except Exception, e:
-            print repr(e)
-
         while True:
             try:
-                # time.sleep(5)
-                # starttime = time.clock()
-                # d2wait = datetime.datetime.now()
-                # delawait = (d2wait - d1wait).seconds
-                # if (delawait > 1):
-                time.sleep(0.1)
-                result = self.getEvent(self.first_fp, self.fnames, self.vnames, self.vtypes, self.client)
-                    # d1wait = d2wait
-                # durningtime = time.clock() - starttime
-                # self.all_time.append(durningtime * 1000)
-                # if result is not None:
-                #     print #result
-                # d2 = datetime.datetime.now()
-                # dela = (d2 - d1).seconds
-                # if (dela > 180):
-                #     print "##########", count
-                #     used = process_info.memory_info().rss
-                #     self.cpuPercent.append(process_info.cpu_percent())
-                #     tmp = "%.3f" % float((used * 1.0 / sys_info.total) * 100)
-                #     self.memPercent.append(tmp)
-                #     d1 = d2
-                #     count += 1
-                #     if (count == 11):
-                #         break
+                print "waiting for connection..."
+                client, addr = tcpSocket.accept()
+                print "...connected from:", addr
+                while True:
+                    time.sleep(1)
+                    for result in self.getEvent(first_fp, fnames, vnames, vtypes):
+                        if result is not None:
+                            print result
+                            client.sendall(result)
             except Exception, e:
                 print repr(e)
-
-        # print len(self.readMemory_time)
-        # print len(self.memoryAnalyze_time)
-        # print len(self.all_time)
-
-        # input = open("test.txt", "w")
-        # input.write("readMemoryTime: " + str(self.readMemory_time) + "\n")
-        # input.write("memoryAnalyzeTime: " + str(self.memoryAnalyze_time) + "\n")
-        # input.write("AllTime: " + str(self.all_time))
-        # input.close()
-        # output = open("cpumem.txt", "w")
-        # output.write("processName: " + psutil.Process(os.getpid()).name() + "\n")
-        # output.write("processLocal: " + psutil.Process(os.getpid()).cwd() + "\n")
-        # output.write("cpuPercent(%): " + str(self.cpuPercent) + "\n")
-        # output.write("memPercent(%): " + str(self.memPercent) + "\n")
-        # output.close()
+            finally:
+                client.close()
+        tcpSocket.close()
 
         PyDump.stop()
         jpype.shutdownJVM()
-        tcpSocket.close()
-    # def run_command(self):
-    #     inf = self.getEvent(self.first_fp, self.fnames, self.vnames, self.vtypes, self.client)
-    #     self.conf.t1_insert(inf + '\n\n')
-    #     print 'run over\n'
-    #
-    # def stop_command(self):
-    #     self.conf.stop()
 
-    def getEvent(self, first_fp, fnames, vnames, vtypes, client):
-        # start_time = time.clock()
-        memory = self.readMemory(first_fp - 7000, 8000)
-        # durning_time = time.clock() - start_time
-        # self.readMemory_time.append((durning_time * 1000))
-        # print "readMemory cost: ", durning_time * 1000, "ms"
-        self.memory = memory
+    def getEvent(self, first_fp, fnames, vnames, vtypes):
+        memory = self.readMemory(first_fp - 2000, 3000)
         frame = Frame(first_fp, memory, self)
-        inf = ""
-        start_time = time.clock()
-        count_frame = 0
         while frame is not None:
             methodName = frame.getName()
-            if methodName is not None:
-                count_frame += 1
-                # print methodName, "fp:", hex(frame.fp)
-                # if frame.fp in frame.memory[1]:
-                #     print #hex(frame.memory[1][frame.fp])
-                # else:
-                #     print
             if methodName is not None and methodName in fnames:
-                inf += "->"
                 index = fnames.index(methodName)
                 variables = frame.getLocals(vtypes[index])
                 result = self.event_front_1 + methodName + self.event_front_2
-                inf += (methodName + "(")
                 for i, val in enumerate(variables):
                     result += (self.event_middle_1 + vnames[index][i] + self.event_middle_2)
                     result += val
                     result += (self.event_middle_3 + vnames[index][i] + self.event_middle_4)
-                    inf += (val + ',')
                 result += self.event_end
-                # print result
-                if client is not None:
-                    client.sendall(result)
-                inf += ")"
-            elif methodName is not None:
-                inf += "->"
-                inf += methodName
+                yield result
             frame = frame.getNextFrame()
-        # durning_time = time.clock() - start_time
-        # self.memoryAnalyze_time.append((durning_time * 1000))
-        # print "memoryAnalyze cost: ", durning_time * 1000, "ms"
-        print "count_frame: ", count_frame
-        return inf
 
     def getThreadsId(self):
         return self.threadsId
@@ -377,7 +261,6 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
     def getLibBase(self):
         return self.libbases
 
-    # 根据符号名称在共享库中查找符号在内存的地址 （起始地址 + 偏移量）
     def lookUpByName(self, objectName, symbol):
         for lib in self.libs:
             if objectName in lib.name:
@@ -394,20 +277,15 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         result = self.read(self.currentTask, int(address), int(numBytes))
         return result
 
-    # 栈内存获取模块
     def readMemory(self, address, numBytes):
-        # 获取进程地址空间
         space = self.currentTask.get_process_address_space()
         str = space.read(address, numBytes)
-        # address -> memory
         res1 = {}
-        # memory -> address
         res2 = {}
         if str is None:
             print "none"
             return None, None
         for i in range(numBytes / 8):
-            # 转换出内存的整型结果
             unpack_res = struct.unpack("<Q", str[i * 8 :(i + 1) * 8])
             res1[address + i * 8] = unpack_res[0]
             res2[unpack_res[0]] = address + i * 8
@@ -422,30 +300,6 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
     def getNameByAddress(self, address):
         return self.PyDump.getMethodName(long(address))
 
-    def isComplied(self, threadName, funcName):
-        return self.PyDump.isCompliedFrame(threadName, funcName)
-
-    def getNextCompliedSP(self, sp):
-        frameSize = 8
-        sp = 0
-        while (frameSize < 64):
-            unextendedSP = sp - frameSize
-            pc = self.memory[0][self.memory[1][unextendedSP] + 16]
-            # TODO:scopeDesc.check()
-            check1 = False
-            if check1 is True:
-                sp = self.memory[1][unextendedSP] + 24
-                break
-            else:
-                pc = self.memory[0][unextendedSP - 8]
-                # TODO:scopeDesc.check()
-                check2 = False
-                if check2 is True:
-                    sp = unextendedSP
-                    break
-                else:
-                    frameSize += 8
-        return sp
 
 class Library:
     def __init__(self):
@@ -459,12 +313,10 @@ class Frame:
         self.debugger = debugger
         self.complied = complied
 
-    # 得到本地变量
     def getLocals(self, types, static=False):
         res = []
         if self.memory[0] is not None and self.fp - 48 in self.memory[0].keys():
             local = self.memory[0][self.fp - 48]
-            # print 'fp - 48:', hex(self.fp - 48), hex(local)
             if not static:
                 local -= 8
             i = 0
@@ -472,9 +324,7 @@ class Frame:
                 if types[i] == 4 or types[i] == 2:
                     local -= 8
                 value = self.memory[0][local]
-                v = self.getVal(value, types[i])
-                # print hex(local), v
-                res.append(v)
+                res.append(self.getVal(value, types[i]))
                 local -= 8
                 i += 1
         return res
@@ -496,7 +346,6 @@ class Frame:
         else:
             return str(value)
 
-    # 得到名称
     def getName(self):
         res = None
         if self.memory[0] is not None and self.fp - 24 in self.memory[0].keys():
@@ -506,25 +355,11 @@ class Frame:
                 res = None
         return res
 
-    # 得到下一栈帧
     def getNextFrame(self):
         frame = None
-        # methodName = self.getName()
-        # if methodName is not None:
-        #     compiled = self.debugger.isComplied("main", methodName)
-        #     if compiled:
-        #         print "curMethodName: " + methodName + " CompliedFrame"
-        #
-        #     else:
-        #         print "curMethodName: " + methodName + " InterpretedFrame"
-        # else:
-        #     print "methodName is None"
         if self.memory[1] is not None and self.fp in self.memory[1].keys():
             nfp = self.memory[1][self.fp]
             frame = Frame(nfp, self.memory, self.debugger)
-        # else:
-        #     print "can not get InterpretedFrame, try to get CompiledFrame"
-        #     sp = self.debugger.getNextCompliedSP(self.fp - 16)
-        #     nfp = sp - 16
-        #     frame = Frame(nfp, self.memory, self.debugger)
+
         return frame
+

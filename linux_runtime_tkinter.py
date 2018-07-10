@@ -33,9 +33,6 @@ import volatility.plugins.linux.java.readelf
 import socket
 import time
 import paramiko
-import datetime
-import psutil
-import os
 
 from volatility.plugins.linux.java import readelf
 from volatility.plugins.linux.java.conf import Conf
@@ -48,9 +45,6 @@ def ssh_cmd(hostname, port, username, password, cmd):
     client.connect(hostname=hostname, port=port, username=username, password=password)
     stdin, stdout, stderr = client.exec_command(cmd)
     result = stdout.read()
-    error = stderr.read()
-    if error.decode() is not None:
-        print error.decode()
     client.close()
     return result
 
@@ -137,12 +131,12 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         return ans
 
     def render_text(self, outfd, data):
-        # local_conf = Conf()
-        # local_conf.config_no()
-        # local_conf.start()
-        print ">>>>>> render_test >>>>>>"
+        local_conf = Conf()
+        local_conf.config_no()
+        local_conf.start()
+
         # start JVM, j_test_path is param represent DLL
-        j_test_path = '-Djava.class.path=/home/kong/java memory/JDI_test.jar'
+        j_test_path = '-Djava.class.path=/home/kong/java memory/JDI.jar'
         jpype.startJVM(jpype.getDefaultJVMPath(), j_test_path)
         tasks = self.calculate()
 
@@ -158,18 +152,17 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         self.vtypes = [[1, 1], [2, 2], [3, 3], [4, 4]]
 
         # ssh
-        hostname = '10.108.167.30'
-        port = 22
-        username = 'root'
-        password = '123456'
+        # hostname = '10.108.164.67'
+        # port = 22
+        # username = 'root'
+        # password = '123456'
+        #
+        # cmd = 'java -jar pyagent.jar ' + str(task.pid)
+        # ssh_res = ssh_cmd(hostname=hostname, port=port, username=username, password=password, cmd=cmd)
+        # if 'yes' not in ssh_res:
+        #     print ssh_res
+        #     raise Exception("no task or wrong pid")
 
-        cmd = 'java -jar /home/vm/pyagent.jar ' + str(task.pid)
-        ssh_res = ssh_cmd(hostname=hostname, port=port, username=username, password=password, cmd=cmd)
-        if 'yes' not in ssh_res:
-            print ssh_res.decode()
-            raise Exception("no task or wrong pid")
-        else:
-            print 'pyagent.jar return yes'
         libnames = [] # 共享库名称
         libbases = [] # 共享库起始地址
         libs = []
@@ -191,7 +184,7 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
 
         for lib in libs:
             if ".so" in lib.name or "java" in lib.name:
-                print "base:", hex(lib.base), "name:", lib.name
+                print "base:", lib.base, "name:", lib.name
         # 获取子线程tid
         threadsId = []
         for thread in task.threads():
@@ -225,7 +218,7 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         PyDump.initVM(jp, int(task.pid))
 
         self.first_fp = PyDump.initJavaFirstFPAddress("main", True)
-        print 'first_fp:', hex(self.first_fp)
+        print 'first_fp:', self.first_fp
 
         # event
         self.event_front_1 = '<xml type="event"'
@@ -238,134 +231,64 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
 
         self.client = None
 
-        self.readMemory_time = []
-        self.memoryAnalyze_time = []
-        self.all_time = []
-
-        self.cpuPercent = []
-        self.memPercent = []
-        print "===== START =====", os.getpid()
-
-        # d1 = datetime.datetime.now()
-        # sys_info = psutil.virtual_memory()
-        # process_info = psutil.Process(os.getpid())
-
-        count = 0
-        # d1wait = datetime.datetime.now()
-        tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        tcpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        tcpSocket.bind(('', 6666))
-        tcpSocket.listen(5)
+        # tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        # tcpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        # tcpSocket.bind(('', 6666))
+        # tcpSocket.listen(5)
         try:
             print "waiting for connection..."
-            self.client, addr = tcpSocket.accept()
-            print "...connected from:", addr
-            # self.conf = Conf()
-            # self.conf.config(self.run_command, self.stop_command)
-            # self.conf.start()
+            # self.client, addr = tcpSocket.accept()
+            # print "...connected from:", addr
+            self.conf = Conf()
+            self.conf.config(self.run_command, self.stop_command)
+            self.conf.start()
         except Exception, e:
             print repr(e)
-
-        while True:
-            try:
-                # time.sleep(5)
-                # starttime = time.clock()
-                # d2wait = datetime.datetime.now()
-                # delawait = (d2wait - d1wait).seconds
-                # if (delawait > 1):
-                time.sleep(0.1)
-                result = self.getEvent(self.first_fp, self.fnames, self.vnames, self.vtypes, self.client)
-                    # d1wait = d2wait
-                # durningtime = time.clock() - starttime
-                # self.all_time.append(durningtime * 1000)
-                # if result is not None:
-                #     print #result
-                # d2 = datetime.datetime.now()
-                # dela = (d2 - d1).seconds
-                # if (dela > 180):
-                #     print "##########", count
-                #     used = process_info.memory_info().rss
-                #     self.cpuPercent.append(process_info.cpu_percent())
-                #     tmp = "%.3f" % float((used * 1.0 / sys_info.total) * 100)
-                #     self.memPercent.append(tmp)
-                #     d1 = d2
-                #     count += 1
-                #     if (count == 11):
-                #         break
-            except Exception, e:
-                print repr(e)
-
-        # print len(self.readMemory_time)
-        # print len(self.memoryAnalyze_time)
-        # print len(self.all_time)
-
-        # input = open("test.txt", "w")
-        # input.write("readMemoryTime: " + str(self.readMemory_time) + "\n")
-        # input.write("memoryAnalyzeTime: " + str(self.memoryAnalyze_time) + "\n")
-        # input.write("AllTime: " + str(self.all_time))
-        # input.close()
-        # output = open("cpumem.txt", "w")
-        # output.write("processName: " + psutil.Process(os.getpid()).name() + "\n")
-        # output.write("processLocal: " + psutil.Process(os.getpid()).cwd() + "\n")
-        # output.write("cpuPercent(%): " + str(self.cpuPercent) + "\n")
-        # output.write("memPercent(%): " + str(self.memPercent) + "\n")
-        # output.close()
-
+        # finally:
+            # self.client.close()
+        # tcpSocket.close()
         PyDump.stop()
         jpype.shutdownJVM()
-        tcpSocket.close()
-    # def run_command(self):
-    #     inf = self.getEvent(self.first_fp, self.fnames, self.vnames, self.vtypes, self.client)
-    #     self.conf.t1_insert(inf + '\n\n')
-    #     print 'run over\n'
-    #
-    # def stop_command(self):
-    #     self.conf.stop()
+
+    def run_command(self):
+        inf = self.getEvent(self.first_fp, self.fnames, self.vnames, self.vtypes, self.client)
+        self.conf.t1_insert(inf + '\n\n')
+        print 'run over\n'
+
+    def stop_command(self):
+        self.conf.stop()
 
     def getEvent(self, first_fp, fnames, vnames, vtypes, client):
-        # start_time = time.clock()
-        memory = self.readMemory(first_fp - 7000, 8000)
-        # durning_time = time.clock() - start_time
-        # self.readMemory_time.append((durning_time * 1000))
-        # print "readMemory cost: ", durning_time * 1000, "ms"
-        self.memory = memory
+        memory = self.readMemory(first_fp - 5000, 6000)
         frame = Frame(first_fp, memory, self)
-        inf = ""
-        start_time = time.clock()
-        count_frame = 0
+        inf = ''
         while frame is not None:
             methodName = frame.getName()
             if methodName is not None:
-                count_frame += 1
-                # print methodName, "fp:", hex(frame.fp)
-                # if frame.fp in frame.memory[1]:
-                #     print #hex(frame.memory[1][frame.fp])
-                # else:
-                #     print
+                print methodName, 'fp:', frame.fp,
+                if frame.fp in frame.memory[1]:
+                    print frame.memory[1][frame.fp]
+                else:
+                    print
             if methodName is not None and methodName in fnames:
-                inf += "->"
+                inf += '->'
                 index = fnames.index(methodName)
                 variables = frame.getLocals(vtypes[index])
                 result = self.event_front_1 + methodName + self.event_front_2
-                inf += (methodName + "(")
+                inf += (methodName + '(')
                 for i, val in enumerate(variables):
                     result += (self.event_middle_1 + vnames[index][i] + self.event_middle_2)
                     result += val
                     result += (self.event_middle_3 + vnames[index][i] + self.event_middle_4)
                     inf += (val + ',')
                 result += self.event_end
-                # print result
                 if client is not None:
                     client.sendall(result)
-                inf += ")"
+                inf += ')'
             elif methodName is not None:
-                inf += "->"
+                inf += '->'
                 inf += methodName
             frame = frame.getNextFrame()
-        # durning_time = time.clock() - start_time
-        # self.memoryAnalyze_time.append((durning_time * 1000))
-        # print "memoryAnalyze cost: ", durning_time * 1000, "ms"
-        print "count_frame: ", count_frame
         return inf
 
     def getThreadsId(self):
@@ -422,30 +345,6 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
     def getNameByAddress(self, address):
         return self.PyDump.getMethodName(long(address))
 
-    def isComplied(self, threadName, funcName):
-        return self.PyDump.isCompliedFrame(threadName, funcName)
-
-    def getNextCompliedSP(self, sp):
-        frameSize = 8
-        sp = 0
-        while (frameSize < 64):
-            unextendedSP = sp - frameSize
-            pc = self.memory[0][self.memory[1][unextendedSP] + 16]
-            # TODO:scopeDesc.check()
-            check1 = False
-            if check1 is True:
-                sp = self.memory[1][unextendedSP] + 24
-                break
-            else:
-                pc = self.memory[0][unextendedSP - 8]
-                # TODO:scopeDesc.check()
-                check2 = False
-                if check2 is True:
-                    sp = unextendedSP
-                    break
-                else:
-                    frameSize += 8
-        return sp
 
 class Library:
     def __init__(self):
@@ -464,7 +363,7 @@ class Frame:
         res = []
         if self.memory[0] is not None and self.fp - 48 in self.memory[0].keys():
             local = self.memory[0][self.fp - 48]
-            # print 'fp - 48:', hex(self.fp - 48), hex(local)
+            print 'fp - 48:', self.fp - 48, local
             if not static:
                 local -= 8
             i = 0
@@ -473,7 +372,7 @@ class Frame:
                     local -= 8
                 value = self.memory[0][local]
                 v = self.getVal(value, types[i])
-                # print hex(local), v
+                print local, v
                 res.append(v)
                 local -= 8
                 i += 1
@@ -509,22 +408,8 @@ class Frame:
     # 得到下一栈帧
     def getNextFrame(self):
         frame = None
-        # methodName = self.getName()
-        # if methodName is not None:
-        #     compiled = self.debugger.isComplied("main", methodName)
-        #     if compiled:
-        #         print "curMethodName: " + methodName + " CompliedFrame"
-        #
-        #     else:
-        #         print "curMethodName: " + methodName + " InterpretedFrame"
-        # else:
-        #     print "methodName is None"
         if self.memory[1] is not None and self.fp in self.memory[1].keys():
             nfp = self.memory[1][self.fp]
             frame = Frame(nfp, self.memory, self.debugger)
-        # else:
-        #     print "can not get InterpretedFrame, try to get CompiledFrame"
-        #     sp = self.debugger.getNextCompliedSP(self.fp - 16)
-        #     nfp = sp - 16
-        #     frame = Frame(nfp, self.memory, self.debugger)
+
         return frame
