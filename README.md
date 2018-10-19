@@ -40,6 +40,7 @@
     - cd tools/pyvmi/
     - sudo python setup.py build
     - sudo python setup.py install
+    - ldconfig
 
 # 虚拟机
 
