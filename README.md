@@ -63,7 +63,12 @@
     | j_test_path     | -Djava.class.path=/home/kong/JavaMemory/JDI/out/artifacts/JDI_jar/JDI.jar |
     | symbol          | /home/kong/JavaMemory/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so          |
     | self.symbolDict | /home/vm/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so                       |
-3. JDI工程需要导入包 jdk1.7.0_79/lib/sa-jdi.jar
+3. JDI工程需要导入包
+
+- `jdk1.7.0_79/lib/sa-jdi.jar`
+- `JavaMemory/JDI.jar`
+
+IDEA中打JDI包方法[参考](https://www.jianshu.com/p/2e06dd2ea4da)，要将官方`JDI.jar`、`sa-jdi.jar` Extracted Directory到项目中
 
 ## 测试环境
 
@@ -73,18 +78,17 @@
     1. 将volatility工程拷到虚拟机中
     2. `sudo apt-get install dwarfdump`
     3. `sudo apt-get install build-essential`
-    4. 建议禁止内核自动升级，`sudo apt-mark hold linux-headers-内核版本号`
-    5. sudo apt-get install linux-headers-内核版本号
-    6. `cd volatility/tools/linux 并 make`
-    7. `head module.dwarf`
-    8. `sudo zip volatility-2.6/volatility/plugins/overlays/linux/Ubuntu系统版本号_内核版本号.zip volatility/tools/linux/module.dwarf /boot/System.map-内核版本号`
-    9. 将生成的zip文件拷到宿主机的 `volatility-2.6/volatility/plugins/overlays/linux`目录下 并修改参数
+    4. 建议禁止内核自动升级，`sudo apt-mark hold 内核版本号`
+    5. `cd volatility/tools/linux 并 make`
+    6. `head module.dwarf`
+    7. `sudo zip volatility-2.6/volatility/plugins/overlays/linux/Ubuntu系统版本号_内核版本号.zip volatility-2.6/tools/linux/module.dwarf /boot/System.map-内核版本号`
+    8. 将生成的zip文件拷到宿主机的 `volatility-2.6/volatility/plugins/overlays/linux`目录下 并修改参数
 
 ## 运行流程
 
 1. 虚拟机执行命令 `java -jar -Xint Test.jar` 运行测试程序
 2. 虚拟机另开终端 执行命令jps 获取jar对应的 `线程号` 并执行命令 `sudo java -jar pyagent.jar 线程号`
-3. 宿主机 配置参数为 `-l vmi://ubuntu --profile=LinuxUbuntu1604_XXXx64 linux_runtime -p [线程号]`
+3. 宿主机 配置参数为 `-l vmi://ubuntu --profile=LinuxUbuntu1604_XXXx64 linux_runtime -p 线程号`
 4. vmi 为虚拟机的名字
 
 ## Q & A
