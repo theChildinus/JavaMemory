@@ -138,6 +138,7 @@ def main():
     # Get the version information on every output from the beginning
     # Exceptionally useful for debugging/telling people what's going on
     sys.stderr.write("Volatility Foundation Volatility Framework {0}\n".format(constants.VERSION))
+    print "readyTime1:", time.clock()
     sys.stderr.flush()
 
     # Setup the debugging format

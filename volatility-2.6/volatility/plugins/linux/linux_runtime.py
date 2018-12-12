@@ -33,9 +33,8 @@ import volatility.plugins.linux.java.readelf
 import socket
 import time
 import paramiko
-import datetime
-import psutil
 import os
+import datetime
 
 from volatility.plugins.linux.java import readelf
 from volatility.plugins.linux.java.conf import Conf
@@ -142,10 +141,10 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         # local_conf.start()
         print ">>>>>> render_test >>>>>>"
         # start JVM, j_test_path is param represent DLL
-        j_test_path = '-Djava.class.path=/home/kong/java memory/JDI_test.jar'
+        j_test_path = '-Djava.class.path=/home/kong/JavaMemory/JDI/out/artifacts/JDI/JDI.jar'
         jpype.startJVM(jpype.getDefaultJVMPath(), j_test_path)
+        # tasks 表示被监控程序的进程Id（JVM）
         tasks = self.calculate()
-
         if len(tasks) > 0:
             task = tasks[0]
         else:
@@ -158,7 +157,7 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         self.vtypes = [[1, 1], [2, 2], [3, 3], [4, 4]]
 
         # ssh
-        hostname = '10.108.167.30'
+        hostname = '10.108.165.221'
         port = 22
         username = 'root'
         password = '123456'
@@ -197,6 +196,8 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         for thread in task.threads():
             threadsId.append(long(thread.pid))
 
+        print threadsId
+
         self.libnames = libnames
         self.libbases = libbases
         self.threadsId = threadsId
@@ -204,7 +205,7 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         self.libs = libs
         self.symbolDict = {}
         # read elf function, symbol represent share lib offset
-        symbol = volatility.plugins.linux.java.readelf.read_sym_offset("/home/kong/java memory/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so")
+        symbol = volatility.plugins.linux.java.readelf.read_sym_offset("/home/kong/JavaMemory/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so")
         self.symbolDict["/home/vm/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so"] = symbol
 
         # java interface for python
@@ -224,7 +225,8 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         # java init
         PyDump.initVM(jp, int(task.pid))
 
-        self.first_fp = PyDump.initJavaFirstFPAddress("main", True)
+        self.first_fp = PyDump.initJavaFirstFPAddress("WindowsException", True)
+        # self.first_fp = PyDump.initJavaFirstFPAddress("main", True)
         print 'first_fp:', hex(self.first_fp)
 
         # event
@@ -244,6 +246,7 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
 
         self.cpuPercent = []
         self.memPercent = []
+        print "readyTime2:", time.clock()
         print "===== START =====", os.getpid()
 
         # d1 = datetime.datetime.now()
@@ -252,20 +255,20 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
 
         count = 0
         # d1wait = datetime.datetime.now()
-        tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        tcpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-        tcpSocket.bind(('', 6666))
-        tcpSocket.listen(5)
-        try:
-            print "waiting for connection..."
-            self.client, addr = tcpSocket.accept()
-            print "...connected from:", addr
-            # self.conf = Conf()
-            # self.conf.config(self.run_command, self.stop_command)
-            # self.conf.start()
-        except Exception, e:
-            print repr(e)
-
+        # tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        # tcpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        # tcpSocket.bind(('', 6666))
+        # tcpSocket.listen(5)
+        # try:
+        #     print "waiting for connection..."
+        #     self.client, addr = tcpSocket.accept()
+        #     print "...connected from:", addr
+        #     # self.conf = Conf()
+        #     # self.conf.config(self.run_command, self.stop_command)
+        #     # self.conf.start()
+        # except Exception, e:
+        #     print repr(e)
+        count = 0
         while True:
             try:
                 # time.sleep(5)
@@ -273,8 +276,13 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
                 # d2wait = datetime.datetime.now()
                 # delawait = (d2wait - d1wait).seconds
                 # if (delawait > 1):
-                time.sleep(0.1)
+                time.sleep(1)
+                time_start = time.clock()
                 result = self.getEvent(self.first_fp, self.fnames, self.vnames, self.vtypes, self.client)
+                time_end = time.clock()
+                print "start, end: ", time_start, ",", time_end
+                print "Durning: ", (time_end - time_start) * 1000, "ms"
+                count += 1
                     # d1wait = d2wait
                 # durningtime = time.clock() - starttime
                 # self.all_time.append(durningtime * 1000)
@@ -313,7 +321,7 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
 
         PyDump.stop()
         jpype.shutdownJVM()
-        tcpSocket.close()
+        # tcpSocket.close()
     # def run_command(self):
     #     inf = self.getEvent(self.first_fp, self.fnames, self.vnames, self.vtypes, self.client)
     #     self.conf.t1_insert(inf + '\n\n')
@@ -324,24 +332,21 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
 
     def getEvent(self, first_fp, fnames, vnames, vtypes, client):
         # start_time = time.clock()
-        memory = self.readMemory(first_fp - 7000, 8000)
+        memory = self.readMemory(first_fp - 5000, 6000)
         # durning_time = time.clock() - start_time
         # self.readMemory_time.append((durning_time * 1000))
         # print "readMemory cost: ", durning_time * 1000, "ms"
         self.memory = memory
         frame = Frame(first_fp, memory, self)
         inf = ""
-        start_time = time.clock()
-        count_frame = 0
         while frame is not None:
             methodName = frame.getName()
             if methodName is not None:
-                count_frame += 1
-                # print methodName, "fp:", hex(frame.fp)
-                # if frame.fp in frame.memory[1]:
-                #     print #hex(frame.memory[1][frame.fp])
-                # else:
-                #     print
+                print methodName, "fp:", hex(frame.fp),
+                if frame.fp in frame.memory[1]:
+                    print hex(frame.memory[1][frame.fp])
+                else:
+                    print
             if methodName is not None and methodName in fnames:
                 inf += "->"
                 index = fnames.index(methodName)
@@ -362,10 +367,11 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
                 inf += "->"
                 inf += methodName
             frame = frame.getNextFrame()
+            if frame is None:
+                print "nextFrame is None"
         # durning_time = time.clock() - start_time
         # self.memoryAnalyze_time.append((durning_time * 1000))
         # print "memoryAnalyze cost: ", durning_time * 1000, "ms"
-        print "count_frame: ", count_frame
         return inf
 
     def getThreadsId(self):
@@ -464,7 +470,7 @@ class Frame:
         res = []
         if self.memory[0] is not None and self.fp - 48 in self.memory[0].keys():
             local = self.memory[0][self.fp - 48]
-            # print 'fp - 48:', hex(self.fp - 48), hex(local)
+            print 'fp - 48:', hex(self.fp - 48), hex(local)
             if not static:
                 local -= 8
             i = 0
@@ -472,9 +478,10 @@ class Frame:
                 if types[i] == 4 or types[i] == 2:
                     local -= 8
                 value = self.memory[0][local]
-                v = self.getVal(value, types[i])
-                # print hex(local), v
-                res.append(v)
+                print "value: ", value
+                # v = self.getVal(value, types[i])
+                # print "local -> value : ", hex(local), v
+                # res.append(v)
                 local -= 8
                 i += 1
         return res
@@ -505,6 +512,9 @@ class Frame:
             if len(res) == 0:
                 res = None
         return res
+
+    def getFP(self):
+        return hex(self.fp)
 
     # 得到下一栈帧
     def getNextFrame(self):

@@ -10,6 +10,7 @@ import sun.jvm.hotspot.debugger.linux.*;
 import sun.jvm.hotspot.oops.Method;
 import sun.jvm.hotspot.runtime.*;
 import sun.jvm.hotspot.types.AddressField;
+import sun.tools.util.MyLog;
 
 import java.util.HashMap;
 import java.util.List;
@@ -41,8 +42,12 @@ public class PyTool{
 
     private JavaThread initThread(String threadName) {
         for (JavaThread thread = VM.getVM().getThreads().first(); thread != null; thread = thread.next()) {
+            MyLog.getInstance().getLogger().info(thread.getThreadName());
+        }
+        for (JavaThread thread = VM.getVM().getThreads().first(); thread != null; thread = thread.next()) {
             String tName = thread.getThreadName();
             if(tName != null && tName.contains(threadName)) {
+                MyLog.getInstance().getLogger().info("find Thread: " + tName);
                 return thread;
             }
         }
@@ -89,11 +94,14 @@ public class PyTool{
             threadMap.put(threadName, javaThread);
         }
         if (javaThread != null) {
+            int count = 0;
             for (JavaVFrame vf = javaThread.getLastJavaVFrameDbg(); vf != null; vf = vf.javaSender()) {
+                count++;
                 if (vf.javaSender() == null) {
                     result = ((LinuxAddress)vf.getFrame().getFP()).getValue();
                 }
             }
+            MyLog.getInstance().getLogger().info("count: " + count);
         }
         return result;
     }
@@ -104,7 +112,7 @@ public class PyTool{
         return method.getName().asString();
     }
 
-    public long[] initAddress(String threadName, String funcName, boolean cached) {
+    public long[] initAddress(String threadName, String funcName, boolean cached) throws Exception {
         long[] result = new long[]{};
         JavaThread javaThread;
         if (!cached || (javaThread = threadMap.get(threadName)) == null) {

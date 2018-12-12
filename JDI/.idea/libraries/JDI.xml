@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="JDI">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../JDI.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

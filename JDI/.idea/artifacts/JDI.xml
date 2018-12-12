@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JDI">
+    <output-path>$PROJECT_DIR$/out/artifacts/JDI</output-path>
+    <root id="archive" name="JDI.jar">
+      <element id="module-output" name="main" />
+      <element id="library" level="project" name="JDI" />
+      <element id="library" level="project" name="Test" />
+      <element id="library" level="project" name="sa-jdi" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="extracted-dir" path="$PROJECT_DIR$/../JDI.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../jdk1.7.0_79/lib/sa-jdi.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

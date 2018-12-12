@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="sa-jdi">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../jdk1.7.0_79/lib/sa-jdi.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
