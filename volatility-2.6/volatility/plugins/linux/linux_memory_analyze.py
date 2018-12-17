@@ -62,14 +62,16 @@ def FuncSet(str):
     
 def objdump_handle():   
     #with open("./initial/objfile/example1.s",'r') as f:   #set path  ***  #这个函数可以单独提取出来测试 知道最终获取的字典内容
-    with open("./objfile/stack.s",'r') as f:   #set path  ***  虚拟机中正在运行的c语言程序的反汇编码文件
+    with open("/home/kong/JavaMemory/volatility-2.6/objfile/stackdump",'r') as f:   #set path  ***  虚拟机中正在运行的c语言程序的反汇编码文件
          total_str = f.read()
 
     #the initial range  "libc  ---  main "
-    start_index = total_str.find("<__libc_start_main@plt>:")    
-    end_index =  total_str.find("<__libc_csu_fini>:")   #modify    
+    # start_index = total_str.find("<__libc_start_main@plt>:")
+    # end_index =  total_str.find("<__libc_csu_fini>:")   #modify
+    start_index = total_str.find("<_init>:")
+    end_index = total_str.find("<_fini>:")  # modify
     total_str = total_str[start_index:end_index]        #从反汇编码中 获取其中一段 从<__libc_start_main@plt>:到<__libc_csu_fini>:
-    print total_str
+    # print total_str
     funcList = FuncSet(total_str)
     
     handle_dict = {}
@@ -126,6 +128,31 @@ def read_address(space, start, length = None):
     fmt = "<I" if length == 4 else "<Q"
     return struct.unpack(fmt, space.read(start, length))[0]
 
+def build_event(event_name, event_value, event_id):
+    ver = 1
+    cmd = 101
+    event_head = "<xml type=\"event\" name=\"" + event_name + "\" num=\"" + str(event_id) + "\" attr=\""
+    event_tail = "\"><x>" + str(event_value) + "</x><t>" + str(event_id) + "</t></xml>"
+    event_attr = '*' * (100 - len(event_head) - len(event_tail))
+    event_str = event_head + event_attr + event_tail
+    print event_str
+    header = [ver, event_str.__len__(), cmd]
+    headPack = struct.pack("!3I", *header)
+    return headPack + event_str.encode()
+
+def get_event_name(list):
+    new_list = list[:]
+    new_list.reverse()
+    ans = []
+    i = 0
+    while i + 1 < len(new_list):
+        str1 = new_list[i][0][1:-1].split("_")[-1].replace("@plt", "")
+        str2 = new_list[i + 1][0][1:-1].split("_")[-1].replace("@plt", "")
+        print str1 + "_" + str2
+        ans.append(str1 + "_" + str2)
+        i += 1
+    return ans
+
 
 #class linux_memory_analyze(linux_common.AbstractLinuxCommand):
 class linux_memory_analyze(linux_pslist.linux_pslist):
@@ -154,28 +181,40 @@ class linux_memory_analyze(linux_pslist.linux_pslist):
 
          #2016.12.12
         if distorm_loaded:  #这个插件需要python2.7
-            self.decode_as = distorm3.Decode64Bits #if linux_proc_info.address_size == 4 else distorm3.Decode64Bits
+            self.decode_as = distorm3.Decode32Bits #if linux_proc_info.address_size == 4 else distorm3.Decode64Bits
         else:
             debug.error("You really need the distorm3 python module for this plugin to function properly.")
 
-    def get_registers_value(self,inforegs):
+    def get_registers_value(self, inforegs):
         """get registers value ---dhy 2016-11-27 """
         taskinfo = inforegs.calculate()
-        rsp_register = "rsp"
+        if self.profile.metadata.get('memory_model', '32bit') == '32bit':
+            rsp_register = "esp"
+            rbp_register = "ebp"
+            rip_register = "eip"
+        else:
+            rsp_register = "rsp"
+            rbp_register = "rbp"
+            rip_register = "rip"
         for task, name, thread_regs in inforegs.calculate():
             fmt = str(2*0x8)
-            for thread_name, regs in thread_regs:
+            for thread_name, regs, tid in thread_regs:
                 if regs != None:
                     for m in regs:
-                        print "regkeys()",m
-                        if  m == rsp_register:
-                            print "true"
-                            rspvalue = regs[m]
-                            print "rsp_value::",hex(rspvalue)
-        # return rspvalue
-                    for reg, value in regs.items():
-                        print "type:",type(regs)
-                        debug.info(("dhy::    {:8s}: {:0" + fmt + "x}\n").format(reg, value))
+                        # print "regkeys()", m
+                        if m == rsp_register:
+                            rspValue = regs[m]
+                            print "rsp_value: ", hex(rspValue)
+                        if m == rbp_register:
+                            rbpValue = regs[m]
+                            print "rbp_value: ", hex(rbpValue)
+                        if m == rip_register:
+                            ripValue = regs[m]
+                            print "rip_value: ", hex(ripValue)
+                return rspValue
+                    #for reg, value in regs.items():
+                    #    print "type:",type(regs)
+                    #    debug.info(("dhy::    {:8s}: {:0" + fmt + "x}\n").format(reg, value))
 
 
     def is_return_address(self, address, process_info): 
@@ -188,7 +227,7 @@ class linux_memory_analyze(linux_pslist.linux_pslist):
         """
         proc_as = process_info.get_process_address_space() 
         size = 5
-        print type(size) ,type(address)
+        # print type(size) ,type(address)
         start_code_address = process_info.mm.start_code
         end_code_address = process_info.mm.end_code
         if distorm_loaded and start_code_address < address < end_code_address: #and process_info.is_code_pointer(address):
@@ -252,6 +291,7 @@ class linux_memory_analyze(linux_pslist.linux_pslist):
 
         testDict = {}
         testDict = objdump_handle()
+        event_id = 1
         for task in data:
             print "process name:",task.comm
             print "start_stack:",hex(task.mm.start_stack)
@@ -271,54 +311,76 @@ class linux_memory_analyze(linux_pslist.linux_pslist):
             #s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)  
             #s.connect(address)
             # for i in range(50000):
+            sender = None
+            tcpSocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            tcpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+            tcpSocket.bind(('', 6666))
+            tcpSocket.listen(5)
+            try:
+                print "waiting for connection..."
+                sender, addr = tcpSocket.accept()
+                print "...connected from:", addr
+            except Exception, e:
+                print e
 
-            i=50
+            i = 50
             while(i):
-
+                time.sleep(1)
                 i = i - 1
                 start = datetime.datetime.now()
                 l_new = []
                 indexAddr = None
 
                 rspV = self.get_registers_value(self.inforegs)  #获得栈顶寄存器值
-                # start_read_address = int(rspV)
-                # print type( start_read_address)
+                start_read_address = int(rspV)
+                print type(start_read_address)
 
 
-                for indexAddr in range(0,256):
-                    testAddr = read_address(proc_as,start_read_address + indexAddr*4,4)  #读地址内容哦（地址空间，读取地址，读取长度）
+                for indexAddr in range(0, 512):
+                    testAddr = start_read_address + indexAddr * 4
+                    testValue = read_address(proc_as, testAddr, 4)  #读地址内容哦（地址空间，读取地址，读取长度）
 
 
-                    print hex(testAddr)
-                    flag_tf = self.is_return_address(testAddr, task)
-                    print flag_tf
+                    print "Address: ", hex(testAddr), "Value: ", hex(testValue)
+                    flag_tf = self.is_return_address(testValue, task)
+                    if flag_tf is True:
+                        print "flag_tf: ", flag_tf
                     # if flag_tf:
-                    #     self.find_function_address(proc_as, testAddr)
+                    #     self.find_function_address(proc_as, testValue)
 
 
-                    testStr = hex(testAddr)[2:]                        #地址内容转16进制 去掉0x
-                    print "hex(testAddr)[2:]", testStr
+                    testStr = hex(testValue)[2:]                        #地址内容转16进制 去掉0x
+                    # print "hex(testValue)[2:]", testStr
                     if testStr in testDict:
                         print flag_tf
-                        print testStr,type(testStr)
+                        print testStr, type(testStr)
                         listStr = testDict[testStr]
                         print "listStr", listStr
                         ppStr = FuncSet(listStr)
                         l_new.append(ppStr)                         
-                    print "l_new1::",l_new
-                l_new.append(['<main>'])
+                    # print "l_new1::",l_new
+                # l_new.append(['<main>'])
                 print "l_new2::",l_new
 
                 if cmp(l_old,l_new) != 0:               #l_old和l_new 即栈变化才打印
                     print "Analyze %s :" % i
                     str_new = "<-".join([str(x) for x in l_new])
                     print str_new
-                    #s.send(str_new)  
+                    list_event_name = get_event_name(l_new)
+                    for event_name in list_event_name:
+                        event_str_with_head = build_event(event_name, 1, event_id)
+                        print event_str_with_head
+                        event_id += 1
+                        if sender is not None:
+                            sender.send(event_str_with_head)
+                    #s.send(str_new)
                     end = datetime.datetime.now()
                     print "analyze time:",(end - start)
                 else:
                     pass
+                print "l_old: ", l_old
                 l_old = l_new[:]
+
             #s.close()
 
 

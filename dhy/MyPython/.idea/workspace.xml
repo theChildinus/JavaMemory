@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0d0a9bfc-6634-4c6a-9544-2f46cd69b16a" name="Default" comment="" />
+    <list default="true" id="0d0a9bfc-6634-4c6a-9544-2f46cd69b16a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../../volatility-2.6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../volatility-2.6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../volatility-2.6/volatility/plugins/linux/linux_memory_analyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../volatility-2.6/volatility/plugins/linux/linux_memory_analyze.py" afterDir="false" />
+    </list>
     <ignored path="MyPython.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,13 +25,16 @@
       <file leaf-file-name="linux_memory_analyze.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_memory_analyze.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="299" column="10" selection-start-line="299" selection-start-column="10" selection-end-line="299" selection-end-column="10" />
+            <state relative-caret-position="228">
+              <caret line="304" column="48" lean-forward="true" selection-start-line="304" selection-start-column="48" selection-end-line="304" selection-end-column="48" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -53,12 +59,12 @@
     <option name="width" value="1103" />
     <option name="height" value="604" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -88,6 +94,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,21 +220,22 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1600" height="901" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32806325" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20656371" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20913771" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -252,6 +260,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_memory_analyze.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5681">
+          <caret line="299" column="10" selection-start-line="299" selection-start-column="10" selection-end-line="299" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_memory_analyze.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="5510">
@@ -287,8 +302,8 @@
     <entry file="file://$USER_HOME$/DHY_Program/xml/r-xml.py" />
     <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_memory_analyze.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="299" column="10" selection-start-line="299" selection-start-column="10" selection-end-line="299" selection-end-column="10" />
+        <state relative-caret-position="228">
+          <caret line="304" column="48" lean-forward="true" selection-start-line="304" selection-start-column="48" selection-end-line="304" selection-end-column="48" />
         </state>
       </provider>
     </entry>

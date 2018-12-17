@@ -63,15 +63,16 @@
    - `linux_memory_analyze.py` 用于分析C程序
 3. `linux_runtime.py` 中需要修改的路径有：
 
-    | 变量名          | 默认值           |
-    | --------------- | -------------------- |
+    | 变量名          | 默认值                |
+    | --------------- | ------------------- |
     | j_test_path     | -Djava.class.path=/home/kong/JavaMemory/JDI/out/artifacts/JDI_jar/JDI.jar |
     | symbol          | /home/kong/JavaMemory/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so          |
     | self.symbolDict | /home/vm/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so                       |
 4. `linux_memory_analyze.py` 中需要修改的地方有：
-   | 变量名          | 默认值           |
-    | --------------- | -------------------- |
-    | calculate 函数中 processname    | ./stack 需要修改为分析的C程序名称 |
+
+    | 变量名       | 默认值          |
+    | ----------- | -------------- |
+    | calculate 函数中 processname | ./stack 需要修改为分析的C程序名称 |
 
 5. JDI工程需要导入包
 
