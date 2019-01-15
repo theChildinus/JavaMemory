@@ -44,7 +44,7 @@ import time
 
 import socket    
 
- 
+import collections
 
 import volatility.debug as debug
 try:
@@ -53,7 +53,66 @@ try:
 except:
     distorm_loaded = False
 
+offsets = {}
+# x86 offsets - It works on my Linux machine.
+offsets['32bit'] = [
+'ebx',
+'ecx',
+'edx',
+'esi',
+'edi',
+'ebp',
+'eax',
+'ds',
+'es',
+'fs',
+'gs',
+'orig_eax',
+'eip',
+'cs',
+'eflags',
+'esp',
+'ss'
+]
 
+# x64 offsets
+offsets['64bit'] = [
+'r15',
+'r14',
+'r13',
+'r12',
+'rbp',
+'rbx',
+'r11',
+'r10',
+'r9',
+'r8',
+'rax',
+'rcx',
+'rdx',
+'rsi',
+'rdi',
+'unknown', # I'm not sure what this field is
+'rip',
+'cs',
+'eflags',
+'rsp',
+'ss',
+'fs_base',
+'gs_base',
+'ds',
+'es',
+'fs',
+'gs'
+]
+
+reg_size = {}
+reg_size['32bit'] = 0x4
+reg_size['64bit'] = 0x8
+
+fmt = {}
+fmt['32bit'] = '<I'
+fmt['64bit'] = '<Q'
 
 def FuncSet(str):
     patternfunc = re.compile(r"<.*>")
@@ -173,6 +232,11 @@ class linux_memory_analyze(linux_pslist.linux_pslist):
 
         self.inforegs = linux_info_regs.linux_info_regs(config)
 
+        self.bits = 0
+        self.reg_size = 0
+        self.offsets = []
+        self.fmt = ""
+        self.task = None
 
         if self.profile.metadata.get('memory_model', '32bit') == '32bit':
             address_size = 4
@@ -185,9 +249,49 @@ class linux_memory_analyze(linux_pslist.linux_pslist):
         else:
             debug.error("You really need the distorm3 python module for this plugin to function properly.")
 
+    def parse_kernel_stack(self, task):
+        result = collections.OrderedDict()
+        if 1 or task.mm:
+            sp0 = task.thread.sp0
+            #proc_as = task.get_process_address_space()
+            addr = sp0
+
+            for reg in self.offsets[::-1]: # reverse list, because we read up in the stack
+                #debug.info("Reading {:016x}".format(addr))
+                addr -= self.reg_size
+                val_raw = self.addr_space.read(addr, self.reg_size)
+                val = struct.unpack(self.fmt, val_raw)[0]
+                result[reg] = val
+            return result
+        return None
+
+    def get_inforegs(self, task):
+        linux_common.set_plugin_members(self)
+
+        self.bits = self.profile.metadata.get('memory_model', '32bit')
+        self.reg_size = reg_size[self.bits]
+        self.offsets = offsets[self.bits]
+        self.fmt = fmt[self.bits]
+
+        thread_name = task.comm
+        tid = task.pid
+        regs = self.parse_kernel_stack(task)
+        thread_registers = []
+        thread_registers.append((thread_name, regs, tid))
+        yield task, thread_name, thread_registers
+        # for proc in linux_pslist.linux_pslist(self._config).calculate():
+        #     name = proc.get_commandline()
+        #     thread_registers = []
+        #     for thread_task in proc.threads():
+        #         # thread_name = thread_task.comm
+        #         # regs = self.parse_kernel_stack(thread_task)
+        #         # tid = thread_task.pid
+        #         thread_registers.append((thread_name,regs, tid))
+        #     yield proc, name, thread_registers
+
     def get_registers_value(self, inforegs):
         """get registers value ---dhy 2016-11-27 """
-        taskinfo = inforegs.calculate()
+        # taskinfo = inforegs.calculate()
         if self.profile.metadata.get('memory_model', '32bit') == '32bit':
             rsp_register = "esp"
             rbp_register = "ebp"
@@ -196,7 +300,8 @@ class linux_memory_analyze(linux_pslist.linux_pslist):
             rsp_register = "rsp"
             rbp_register = "rbp"
             rip_register = "rip"
-        for task, name, thread_regs in inforegs.calculate():
+        inforegs = self.get_inforegs(self.task)
+        for task, name, thread_regs in inforegs:
             fmt = str(2*0x8)
             for thread_name, regs, tid in thread_regs:
                 if regs != None:
@@ -275,13 +380,15 @@ class linux_memory_analyze(linux_pslist.linux_pslist):
     def calculate(self):
         linux_common.set_plugin_members(self)
 
-        pidlist = self._config.PID
-        if pidlist:
-            pidlist = [int(p) for p in self._config.PID.split(',')]
-        processname = "./stack"
+        # pidlist = self._config.PID
+        # if pidlist:
+        #     pidlist = [int(p) for p in self._config.PID.split(',')]
+        processname = "stack"
         for task in self.allprocs():
-            if not pidlist or task.pid in pidlist:
+             # if not pidlist or task.pid in pidlist:
                 if str(task.comm) in processname:
+                    print "task.pid: ", task.pid
+                    self.task = task
                     yield task
 
 
@@ -316,16 +423,16 @@ class linux_memory_analyze(linux_pslist.linux_pslist):
             tcpSocket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
             tcpSocket.bind(('', 6666))
             tcpSocket.listen(5)
-            try:
-                print "waiting for connection..."
-                sender, addr = tcpSocket.accept()
-                print "...connected from:", addr
-            except Exception, e:
-                print e
+            # try:
+            #     print "waiting for connection..."
+            #     sender, addr = tcpSocket.accept()
+            #     print "...connected from:", addr
+            # except Exception, e:
+            #     print e
 
-            i = 50
-            while(i):
-                time.sleep(1)
+            i = 3
+            while (i):
+                time.sleep(0.1)
                 i = i - 1
                 start = datetime.datetime.now()
                 l_new = []
