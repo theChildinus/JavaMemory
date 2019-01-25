@@ -7,9 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fe87e21-9842-480e-9eac-41e972d81acb" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/out/artifacts/JDI_jar/JDI.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/sun/tools/python/PyTool.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/sun/tools/python/PyTool.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sun/tools/jdi/Frames.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sun/tools/jdi/Frames.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sun/tools/python/PyDump.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sun/tools/python/PyDump.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sun/tools/python/PyTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sun/tools/python/PyTool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/main/sun/tools/util/MyLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/main/sun/tools/util/MyLog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../volatility-2.6/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../volatility-2.6/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../volatility-2.6/objfile/stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/../volatility-2.6/objfile/stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../volatility-2.6/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../volatility-2.6/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../volatility-2.6/volatility/plugins/linux/linux_runtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/../volatility-2.6/volatility/plugins/linux/linux_runtime.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,29 +30,71 @@
       <file leaf-file-name="PyDump.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/jdi/PyDump.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+            <state relative-caret-position="456">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyLog.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyLog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/util/MyLog.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
-              <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PyTool.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PyTool.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/python/PyTool.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="487">
-              <caret line="96" column="26" lean-forward="true" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
+            <state relative-caret-position="247">
+              <caret line="88" column="38" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PyBugSpotAgent.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/python/PyBugSpotAgent.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="24" column="31" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PyDump.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/python/PyDump.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="551">
+              <caret line="29" column="37" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LinuxDebuggerLocal.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sun/jvm/hotspot/debugger/linux/LinuxDebuggerLocal.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="38">
+              <caret line="24" column="38" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="38" />
+              <folding>
+                <element signature="e#3817#3818#0" expanded="true" />
+                <element signature="e#3876#3877#0" expanded="true" />
+                <element signature="e#16826#16827#0" expanded="true" />
+                <element signature="e#16874#16875#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PythonMethodInterface.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/sun/jvm/hotspot/debugger/linux/PythonMethodInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="9" />
             </state>
           </provider>
         </entry>
@@ -83,6 +130,7 @@
     <findStrings>
       <find>getThreadsId</find>
       <find>run</find>
+      <find>pmi</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main</dir>
@@ -96,10 +144,10 @@
       <list>
         <option value="$PROJECT_DIR$/src/main/java/sun/jvm/hotspot/debugger/linux/LinuxDebuggerLocal.java" />
         <option value="$PROJECT_DIR$/src/main/java/sun/tools/util/Log.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sun/tools/python/PyDump.java" />
-        <option value="$PROJECT_DIR$/src/main/java/sun/tools/python/PyTool.java" />
         <option value="$PROJECT_DIR$/src/main/java/sun/tools/jdi/Frames.java" />
         <option value="$PROJECT_DIR$/src/main/java/sun/tools/util/MyLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sun/tools/python/PyTool.java" />
+        <option value="$PROJECT_DIR$/src/main/java/sun/tools/python/PyDump.java" />
       </list>
     </option>
   </component>
@@ -124,8 +172,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -165,15 +212,8 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sun" type="462c0819:PsiDirectoryNode" />
               <item name="hotspot" type="462c0819:PsiDirectoryNode" />
-              <item name="oops" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sun" type="462c0819:PsiDirectoryNode" />
-              <item name="hotspot" type="462c0819:PsiDirectoryNode" />
-              <item name="runtime" type="462c0819:PsiDirectoryNode" />
+              <item name="debugger" type="462c0819:PsiDirectoryNode" />
+              <item name="linux" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JDI" type="b2602c69:ProjectViewProjectNode" />
@@ -181,14 +221,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="sun" type="462c0819:PsiDirectoryNode" />
               <item name="tools" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sun" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="jdi" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JDI" type="b2602c69:ProjectViewProjectNode" />
@@ -200,47 +232,19 @@
             </path>
             <path>
               <item name="JDI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sun" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDI" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="JDI" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
               <item name="Test" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="JDI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Test" type="70bed36:NamedLibraryElementNode" />
-              <item name="Test.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Test" type="70bed36:NamedLibraryElementNode" />
-              <item name="Test.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JDI" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Test" type="70bed36:NamedLibraryElementNode" />
-              <item name="Test.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="org" type="462c0819:PsiDirectoryNode" />
-              <item name="demo" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -324,6 +328,9 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="StructureViewFactory">
+    <option name="ACTIVE_ACTIONS" value=",ALPHA_COMPARATOR" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -347,19 +354,22 @@
       <workItem from="1542609748274" duration="570000" />
       <workItem from="1542615537026" duration="2142000" />
       <workItem from="1542618220930" duration="2248000" />
+      <workItem from="1546592982803" duration="836000" />
+      <workItem from="1547026443316" duration="549000" />
+      <workItem from="1548144842012" duration="1395000" />
+      <workItem from="1548336691875" duration="3945000" />
+      <workItem from="1548382120408" duration="694000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34537000" />
+    <option name="totallyTimeSpent" value="41956000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1" width="1600" height="901" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32987013" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -371,9 +381,9 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2001287" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4948052" visible="true" weight="0.21299872" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Structure" order="1" sideWeight="0.5051948" side_tool="true" weight="0.2104247" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -381,6 +391,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32987013" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -393,13 +404,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/util/StackInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -488,13 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
           <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/python/PyBugSpotAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -591,13 +594,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sun/jvm/hotspot/debugger/linux/PythonMethodInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/jvm/hotspot/debugger/linux/LinuxDebuggerLocal_py.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1615">
@@ -619,28 +615,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sun/jvm/hotspot/debugger/linux/LinuxDebuggerLocal.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="893">
-          <caret line="81" column="11" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
-          <folding>
-            <element signature="e#16826#16827#0" expanded="true" />
-            <element signature="e#16874#16875#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../jdk1.7.0_79/lib/sa-jdi.jar!/sun/jvm/hotspot/runtime/Frame.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="159" column="26" selection-start-line="159" selection-start-column="20" selection-end-line="159" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sun/jvm/hotspot/runtime/JavaThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="41" column="101" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="101" />
         </state>
       </provider>
     </entry>
@@ -700,23 +678,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/python/PyDump.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="79" selection-start-line="21" selection-start-column="79" selection-end-line="21" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/python/PyTool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="96" column="26" lean-forward="true" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/jdi/Frames.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1290">
@@ -724,17 +685,82 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/jdi/PyDump.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/jvm/hotspot/runtime/JavaThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="238">
+          <caret line="146" column="19" selection-start-line="146" selection-start-column="19" selection-end-line="146" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../jdk1.7.0_79/src.zip!/java/lang/Double.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="637">
+          <caret line="916" column="32" selection-start-line="916" selection-start-column="32" selection-end-line="916" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../jdk1.7.0_79/src.zip!/java/lang/Float.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="645">
+          <caret line="818" column="31" selection-start-line="818" selection-start-column="31" selection-end-line="818" selection-end-column="31" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/util/MyLog.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
-          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/jdi/PyDump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/jvm/hotspot/debugger/linux/PythonMethodInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/python/PyBugSpotAgent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="31" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/jvm/hotspot/debugger/linux/LinuxDebuggerLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="24" column="38" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="38" />
+          <folding>
+            <element signature="e#3817#3818#0" expanded="true" />
+            <element signature="e#3876#3877#0" expanded="true" />
+            <element signature="e#16826#16827#0" expanded="true" />
+            <element signature="e#16874#16875#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/python/PyDump.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="37" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/sun/tools/python/PyTool.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="88" column="38" selection-start-line="88" selection-start-column="16" selection-end-line="88" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -745,9 +771,9 @@
         <settings>
           <artifact-editor>
             <show-content>
-              <type id="javaee-facet-resources" />
               <type id="library" />
               <type id="artifact" />
+              <type id="javaee-facet-resources" />
               <type id="jpa-descriptors" />
             </show-content>
           </artifact-editor>
@@ -805,6 +831,7 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

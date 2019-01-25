@@ -230,7 +230,7 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         # java init
         PyDump.initVM(jp, int(task.pid))
         # self.first_fp = PyDump.initJavaFirstFPAddress("testBusyThread", True)
-        self.first_fp = PyDump.initJavaFirstFPAddress("SubThreadException", True)
+        self.first_fp = PyDump.initJavaFirstFPAddress("main", True)
         print 'first_fp:', hex(self.first_fp)
         # event
         self.event_front_1 = '<xml type="event"'
@@ -259,8 +259,9 @@ class linux_runtime(linux_common.AbstractLinuxCommand):
         #     # self.conf.start()
         # except Exception, e:
         #     print repr(e)
-        count = 30
+        count = 10
         while count > 0:
+            print "#######################"
             try:
                 time.sleep(0.1)
                 time_start = time.clock()
@@ -417,18 +418,24 @@ class Frame:
         res = []
         if self.memory[0] is not None and self.fp - 48 in self.memory[0].keys():
             local = self.memory[0][self.fp - 48]
+            tmp_local = local
             print 'fp - 48:', hex(self.fp - 48), hex(local)
             if not static:
                 local -= 8
             i = 0
+
+            while tmp_local != local - 72:
+                value = self.memory[0][tmp_local]
+                print 'Address: ', hex(tmp_local), ' value: ', hex(value)
+                tmp_local -= 8
+
             while local in self.memory[0].keys() and i < len(types):
                 if types[i] == 4 or types[i] == 2:
                     local -= 8
                 value = self.memory[0][local]
-                print "value: ", value
-                # v = self.getVal(value, types[i])
-                # print "local -> value : ", hex(local), v
-                # res.append(v)
+                v = self.getVal(value, types[i])
+                print 'GetParam >> Address: ', hex(local), 'Value: ', v
+                res.append(v)
                 local -= 8
                 i += 1
         return res
@@ -442,7 +449,7 @@ class Frame:
             val = long(value)
             return str(val)
         elif vtype == 3:
-            val = self.debugger.PyDump.jf(int(value))
+            val = self.debugger.PyDump.jf(int(hex(value)[-8:], 16))
             return str(val)
         elif vtype == 4:
             val = self.debugger.PyDump.jd(long(value))

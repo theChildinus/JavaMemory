@@ -7,16 +7,16 @@ import ctypes
 import inspect
 
 # configure for java Example
-# hostname = '10.108.164.232'
-# port = 22
-# username = 'root'
-# password = '123456'
+hostname = '10.108.164.232'
+port = 22
+username = 'root'
+password = '123456'
 
 # configure for c Example
-hostname = '10.108.167.219'
-port = 22
-username = 'vm'
-password = '123456'
+# hostname = '10.108.167.219'
+# port = 22
+# username = 'vm'
+# password = '123456'
 
 def ssh_cmd(hostname, port, username, password, cmd):
     client = paramiko.SSHClient()
@@ -56,9 +56,10 @@ def loop():
     # vm_cmd1 = 'java -cp /home/vm/ThreadTest.jar MainThreadException'
     # vm_cmd1 = 'java -cp /home/vm/ThreadTest.jar SubThreadException'
     # vm_cmd1 = 'java -cp /home/vm/ThreadTest.jar ThreadWaiting'
-    
+    vm_cmd1 = 'java -cp /home/vm/ThreadTest.jar FuncTest'
+
     # configure for c Example
-    vm_cmd1 = 'cd /home/vm/tmp/buffer-overflow-attack/; ./stack'
+    # vm_cmd1 = 'cd /home/vm/tmp/buffer-overflow-attack/; ./stack'
     ssh_res = ssh_cmd(hostname=hostname, port=port, username=username, password=password, cmd=vm_cmd1)
     print ssh_res
 
@@ -71,7 +72,7 @@ def get_jvm_id():
     lines = ssh_res.splitlines()
     for line in lines:
         key, value = line.split(" ")
-        if "SubThreadException" in value:
+        if "FuncTest" in value:
             jvm_id.append(key)
     jvm_id.sort()
     return jvm_id
@@ -94,17 +95,17 @@ def kill_example(tasks):
 
 if __name__ == "__main__":
 
-    count = 300
+    count = 100
     while count > 0:
-        print '--------------------------------------' + str(300 - count + 1)
+        print '--------------------------------------' + str(100 - count + 1)
         subThread = threading.Thread(target = loop, name = "TestExample")
         subThread.start()
         time.sleep(5)
         # configure for java Example
-        # tasks = get_jvm_id()
+        tasks = get_jvm_id()
 
         # configure for c Example
-        tasks = get_process_id()
+        # tasks = get_process_id()
         if tasks is None:
             terminate_thread(subThread)
             continue
@@ -113,10 +114,10 @@ if __name__ == "__main__":
             print task
 
         # configure for java Example
-        # sh_cmd = "python /home/kong/JavaMemory/volatility-2.6/vol.py -l vmi://ubuntu --profile=LinuxUbuntu1604_139x64 linux_runtime"
+        sh_cmd = "python /home/kong/JavaMemory/volatility-2.6/vol.py -l vmi://ubuntu --profile=LinuxUbuntu1604_139x64 linux_runtime"
 
         # configure for c Example
-        sh_cmd = "python /home/kong/JavaMemory/volatility-2.6/vol.py -l vmi://ubuntu12.04_32bit --profile=LinuxUbuntu1204_23x86 linux_memory_analyze"
+        # sh_cmd = "python /home/kong/JavaMemory/volatility-2.6/vol.py -l vmi://ubuntu12.04_32bit --profile=LinuxUbuntu1204_23x86 linux_memory_analyze"
 
         res = os.system(sh_cmd)
         print res

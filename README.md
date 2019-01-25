@@ -1,5 +1,7 @@
 # 内存重构部署文档
 
+[内存重构实现原理解析](Review.md)
+
 ## 宿主机
 
 ### volatility需要安装的包
@@ -130,7 +132,7 @@ IDEA中打JDI包方法[参考](https://www.jianshu.com/p/2e06dd2ea4da)，要将�
 
 图片中左侧为缓冲区溢出攻击前的堆栈情况，右侧为攻击后的堆栈情况
 
-![buffer_overflow_attack](buffer_overflow_attack.png)
+![buffer_overflow_attack](others/buffer_overflow_attack.png)
 
 ## Q & A
 

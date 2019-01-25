@@ -2,9 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7437be97-321b-4e1c-bc08-5c0c4e09fb68" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../dhy/MyPython/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../dhy/MyPython/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BPEL-Apache-ODE.doc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../JDI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDI/out/production/main/sun/tools/jdi/Frames.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JDI/out/production/main/sun/tools/jdi/Frames.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDI/out/production/main/sun/tools/python/PyDump.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JDI/out/production/main/sun/tools/python/PyDump.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDI/out/production/main/sun/tools/python/PyTool.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JDI/out/production/main/sun/tools/python/PyTool.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JDI/out/production/main/sun/tools/util/MyLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/../JDI/out/production/main/sun/tools/util/MyLog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Review.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Review.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ubuntu1204_23.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../buffer_overflow_attack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../thesis-final.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/volatility/plugins/linux/linux_memory_analyze.py" beforeDir="false" afterPath="$PROJECT_DIR$/volatility/plugins/linux/linux_memory_analyze.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/objfile/stackdump" beforeDir="false" afterPath="$PROJECT_DIR$/objfile/stackdump" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py" beforeDir="false" afterPath="$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../一些描述.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../初步分析.docx" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,29 +29,61 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/volatility_2_6$linux_runtime.coverage" NAME="linux_runtime Coverage Results" MODIFIED="1543565565332" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/volatility_2_6$linux_pslist_12_04.coverage" NAME="linux_pslist_12.04 Coverage Results" MODIFIED="1544668089927" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/volatility_2_6$linux_runtime_c.coverage" NAME="linux_runtime_c Coverage Results" MODIFIED="1544967074328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/volatility_2_6$linux_pslist_16_04.coverage" NAME="linux_pslist_16.04 Coverage Results" MODIFIED="1546933619763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/volatility_2_6$test.coverage" NAME="test Coverage Results" MODIFIED="1548163153977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/volatility_2_6$linux_pslist_12_04.coverage" NAME="linux_pslist_12.04 Coverage Results" MODIFIED="1546827105130" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/volatility_2_6$linux_runtime_c.coverage" NAME="linux_runtime_c Coverage Results" MODIFIED="1547540179946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/volatility_2_6$test_calculate.coverage" NAME="test_calculate Coverage Results" MODIFIED="1546951373115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/volatility_2_6$linux_pslist.coverage" NAME="linux_pslist Coverage Results" MODIFIED="1542597277094" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/volatility_2_6$linux_runtime_java.coverage" NAME="linux_runtime_java Coverage Results" MODIFIED="1548401793190" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="linux_runtime.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="linux_runtime.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6536">
-              <caret line="357" column="26" selection-start-line="357" selection-start-column="20" selection-end-line="357" selection-end-column="26" />
+            <state relative-caret-position="-2280">
+              <caret line="134" column="31" lean-forward="true" selection-start-line="134" selection-start-column="31" selection-end-line="134" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="vol.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vol.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2641">
+              <caret line="139" column="98" selection-start-line="139" selection-start-column="98" selection-end-line="139" selection-end-column="98" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="linux.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/volatility/plugins/overlays/linux/linux.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="35188">
+              <caret line="1868" column="8" selection-start-line="1868" selection-start-column="8" selection-end-line="1868" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1273">
+              <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
               <folding>
-                <element signature="e#847#875#0" expanded="true" />
+                <element signature="e#23#38#0" expanded="true" />
+                <marker date="1548163144688" expanded="true" signature="254:333" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="linux_memory_analyze.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="linux_memory_analyze.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_memory_analyze.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="492">
-              <caret line="280" column="31" lean-forward="true" selection-start-line="280" selection-start-column="22" selection-end-line="280" selection-end-column="31" />
+            <state relative-caret-position="7258">
+              <caret line="401" column="16" selection-start-line="401" selection-start-column="12" selection-end-line="401" selection-end-column="16" />
               <folding>
                 <element signature="e#879#939#0" expanded="true" />
               </folding>
@@ -45,60 +91,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="stackdump" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/objfile/stackdump">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7258">
-              <caret line="382" column="71" selection-start-line="382" selection-start-column="71" selection-end-line="382" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="process_stack.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/process_stack.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12673">
-              <caret line="672" column="8" selection-start-line="672" selection-start-column="8" selection-end-line="672" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="info_regs.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/info_regs.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2204">
-              <caret line="120" column="62" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="datetime.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1247972723/datetime.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3876">
-              <caret line="204" column="63" selection-start-line="204" selection-start-column="63" selection-end-line="204" selection-end-column="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="time.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1247972723/time.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2299">
-              <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>memory</find>
-      <find>first</find>
-      <find>first_fp</find>
       <find>getthreadsId</find>
-      <find>calculate</find>
       <find>jpype</find>
       <find>run</find>
       <find>threadsId</find>
@@ -107,13 +111,27 @@
       <find>testDict</find>
       <find>get_registers_value</find>
       <find>type</find>
-      <find>read</find>
       <find>readBytesFromProcess</find>
       <find>testAddr</find>
-      <find>virtual_process_from_physical_offset</find>
       <find>find</find>
       <find>find_function_address</find>
       <find>client</find>
+      <find>calculate</find>
+      <find>inforegs</find>
+      <find>read_address</find>
+      <find>yield_address</find>
+      <find>thread_offset</find>
+      <find>linux_common</find>
+      <find>getEvent</find>
+      <find>vname</find>
+      <find>lookUpByName</find>
+      <find>pyvmi</find>
+      <find>virtual_process_from_physical_offset</find>
+      <find>get_proce</find>
+      <find>get_process_address_space</find>
+      <find>read</find>
+      <find>process_address_space</find>
+      <find>symbol</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
@@ -126,11 +144,15 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/log.txt" />
-        <option value="$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py" />
-        <option value="$PROJECT_DIR$/vol.py" />
         <option value="$PROJECT_DIR$/volatility/plugins/linux/linux_runtime_c_program.py" />
         <option value="$PROJECT_DIR$/objfile/stack.s" />
+        <option value="$PROJECT_DIR$/vol.py" />
+        <option value="$PROJECT_DIR$/log_java.log" />
+        <option value="$PROJECT_DIR$/log_c.log" />
+        <option value="$PROJECT_DIR$/volatility/plugins/linux/test_calculate.py" />
         <option value="$PROJECT_DIR$/volatility/plugins/linux/linux_memory_analyze.py" />
+        <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py" />
       </list>
     </option>
   </component>
@@ -162,29 +184,6 @@
               <item name="volatility-2.6" type="b2602c69:ProjectViewProjectNode" />
               <item name="volatility-2.6" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="volatility-2.6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="volatility-2.6" type="462c0819:PsiDirectoryNode" />
-              <item name="objfile" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="volatility-2.6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="volatility-2.6" type="462c0819:PsiDirectoryNode" />
-              <item name="volatility" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="volatility-2.6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="volatility-2.6" type="462c0819:PsiDirectoryNode" />
-              <item name="volatility" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="volatility-2.6" type="b2602c69:ProjectViewProjectNode" />
-              <item name="volatility-2.6" type="462c0819:PsiDirectoryNode" />
-              <item name="volatility" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="linux" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -196,7 +195,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/PycharmProjects/vmSystem" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="Console" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -210,7 +209,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.linux_runtime_c">
+  <component name="RunManager" selected="Python.linux_runtime_java">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="volatility-2.6" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -282,12 +281,13 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vol.py" />
-      <option name="PARAMETERS" value="-l vmi://ubuntu12.04_32bit --profile=LinuxUbuntu1204_23x86 linux_memory_analyze -p 6439" />
+      <option name="PARAMETERS" value="-l vmi://ubuntu12.04_32bit --profile=LinuxUbuntu1204_23x86 linux_memory_analyze" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <configuration name="linux_runtime_java" type="PythonConfigurationType" factoryName="Python">
+      <output_file path="$PROJECT_DIR$/log_java.log" />
       <module name="volatility-2.6" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -301,7 +301,46 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vol.py" />
-      <option name="PARAMETERS" value="-l vmi://ubuntu --profile=LinuxUbuntu1604_139x64 linux_runtime -p 2848" />
+      <option name="PARAMETERS" value="-l vmi://ubuntu --profile=LinuxUbuntu1604_139x64 linux_runtime" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python">
+      <output_file path="$PROJECT_DIR$/log_java.log" is_save="true" />
+      <module name="volatility-2.6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="test_calculate" type="PythonConfigurationType" factoryName="Python">
+      <module name="volatility-2.6" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vol.py" />
+      <option name="PARAMETERS" value="-l vmi://ubuntu --profile=LinuxUbuntu1604_139x64 test_calculate" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -310,7 +349,9 @@
       <item itemvalue="Python.linux_pslist_16.04" />
       <item itemvalue="Python.linux_runtime_java" />
       <item itemvalue="Python.linux_runtime_c" />
+      <item itemvalue="Python.test_calculate" />
       <item itemvalue="Python.linux_pslist_12.04" />
+      <item itemvalue="Python.test" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -335,13 +376,13 @@
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993565" weight="0.32207793" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993565" visible="true" weight="0.3922078" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4948052" visible="true" weight="0.25289574" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4935065" visible="true" weight="0.24002574" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info id="Structure" order="1" sideWeight="0.5051948" side_tool="true" visible="true" weight="0.25289574" />
+      <window_info id="Structure" order="1" sideWeight="0.5064935" side_tool="true" weight="0.25611326" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -350,8 +391,31 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32987013" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4935065" visible="true" weight="0.21492921" />
+      <window_info id="Structure" order="1" sideWeight="0.5064935" side_tool="true" weight="0.25611326" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993565" visible="true" weight="0.42207792" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32987013" />
+      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5006435" side_tool="true" weight="0.36528498" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -359,126 +423,12 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vol.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="154" selection-start-line="154" selection-end-line="154" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1247972723/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2679">
-          <caret line="141" column="49" lean-forward="true" selection-start-line="141" selection-start-column="49" selection-end-line="141" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vol.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2926">
-          <caret line="154" lean-forward="true" selection-start-line="154" selection-end-line="154" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1247972723/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4256">
-          <caret line="224" column="55" selection-start-line="224" selection-start-column="55" selection-end-line="224" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1247972723/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6346">
-          <caret line="334" column="22" selection-start-line="334" selection-start-column="12" selection-end-line="334" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1247972723/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3078">
-          <caret line="162" selection-start-line="162" selection-end-line="162" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3078">
-          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="665">
-          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="30" column="12" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="570">
@@ -593,36 +543,8 @@
         <state relative-caret-position="-1653" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vol.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-95">
-          <caret line="169" column="18" selection-start-line="169" selection-start-column="18" selection-end-line="169" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/log.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/pslist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="128" column="8" selection-start-line="128" selection-start-column="8" selection-end-line="128" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file:///usr/lib/python2.7/struct.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1247972723/time.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2299">
-          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/objfile/stack.s">
       <provider selected="true" editor-type-id="text-editor">
@@ -645,13 +567,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/info_regs.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2204">
-          <caret line="120" column="62" selection-start-line="120" selection-start-column="59" selection-end-line="120" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/process_stack.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12673">
@@ -666,30 +581,166 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
+    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/pslist_cache.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6536">
-          <caret line="357" column="26" selection-start-line="357" selection-start-column="20" selection-end-line="357" selection-end-column="26" />
-          <folding>
-            <element signature="e#847#875#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-255">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volatility/commands.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="246">
+          <caret line="279" column="8" selection-start-line="279" selection-start-column="8" selection-end-line="279" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volatility/conf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-725">
+          <caret line="309" column="36" selection-start-line="309" selection-start-column="19" selection-end-line="309" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/pslist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="72" column="26" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1247972723/_struct.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="49" column="12" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="12" />
+        <state relative-caret-position="146">
+          <caret line="60" column="4" selection-start-line="60" selection-start-column="4" selection-end-line="60" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="333" column="8" selection-start-line="333" selection-start-column="8" selection-end-line="333" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1247972723/posix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="821" column="4" selection-start-line="821" selection-start-column="4" selection-end-line="821" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log_java.long" />
+    <entry file="file://$PROJECT_DIR$/log_java.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1938" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.local/lib/python2.7/site-packages/paramiko/client.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="748" selection-start-line="748" selection-end-line="748" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/test_calculate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log_c.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1539">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volatility/subThreadCycle.log" />
+    <entry file="file://$PROJECT_DIR$/subThreadException.log">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="-969" />
+      </provider>
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="-342" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.PyCharm2018.1/system/python_stubs/-1247972723/time.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="531">
+          <caret line="121" column="4" selection-start-line="121" selection-start-column="4" selection-end-line="121" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/subThreadCycle.log">
+      <provider selected="true" editor-type-id="LogFileEditorProvider">
+        <state relative-caret-position="133">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/info_regs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="677">
+          <caret line="80" column="1" selection-start-line="29" selection-end-line="80" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log.txt" />
+    <entry file="file://$PROJECT_DIR$/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1273">
+          <caret line="72" column="22" selection-start-line="72" selection-start-column="22" selection-end-line="72" selection-end-column="22" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+            <marker date="1548163144688" expanded="true" signature="254:333" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_memory_analyze.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="280" column="31" lean-forward="true" selection-start-line="280" selection-start-column="22" selection-end-line="280" selection-end-column="31" />
+        <state relative-caret-position="7258">
+          <caret line="401" column="16" selection-start-line="401" selection-start-column="12" selection-end-line="401" selection-end-column="16" />
           <folding>
             <element signature="e#879#939#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vol.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2641">
+          <caret line="139" column="98" selection-start-line="139" selection-start-column="98" selection-end-line="139" selection-end-column="98" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/java/readelf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="139" column="19" selection-start-line="139" selection-start-column="4" selection-end-line="139" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/common.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volatility/plugins/overlays/linux/linux.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35188">
+          <caret line="1868" column="8" selection-start-line="1868" selection-start-column="8" selection-end-line="1868" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/volatility/plugins/linux/linux_runtime.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2280">
+          <caret line="134" column="31" lean-forward="true" selection-start-line="134" selection-start-column="31" selection-end-line="134" selection-end-column="31" />
         </state>
       </provider>
     </entry>

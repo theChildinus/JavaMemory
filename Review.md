@@ -17,7 +17,7 @@
 
 ### **遇到过的问题和理解**
 
-1. `Volatility` 框架是如何对虚拟机进行内存分析（取证）的?
+#### 1. `Volatility` 框架是如何对虚拟机进行内存分析（取证）的？
 
 先理解以下三个框架、库的作用：
 
@@ -271,9 +271,221 @@ self.first_fp = PyDump.initJavaFirstFPAddress("main", True)
 print 'first_fp:', hex(self.first_fp)
 ```
 
-至此，我们获取到了目标程序的栈底栈帧，后续获取下一栈帧等操作均在python部分完成
+至此，我们获取到了目标程序的栈底栈帧，就可以开始分析虚拟机栈了
 
-在工程地址 - [这里](https://github.com/theChildinus/JavaMemory#%E5%B7%A5%E7%A8%8B%E7%9B%B8%E5%85%B3%E5%AE%BF%E4%B8%BB%E6%9C%BA%E7%AB%AF) 说明了`linux_runtime.py` 写明了工程中哪些变量被写死，可以修改为读取配置文件，使这些变量值得获取更加灵活
+#### 2. 栈帧分析的流程是怎样的？
+
+在问题1中我们获取到了目标程序的栈底栈帧 `fp`，即入口函数 `main函数` 或 `run函数` 的 `fp`，接下来就可以开始分析虚拟机栈了
+
+```python
+# 分析10次虚拟机栈
+count = 10
+while count > 0:
+    try:
+        # 本次分析虚拟机栈与上次分析虚拟机栈时间间隔 0.1s
+        time.sleep(0.1)
+        time_start = time.clock()
+        # 进行栈帧分析 为了和IOT工程配合，所以取名 getEvent
+        result = self.getEvent(self.first_fp, self.fnames, self.vnames, self.vtypes, self.client)
+        time_end = time.clock()
+        print "start, end: ", time_start, ",", time_end
+        print "Durning: ", (time_end - time_start) * 1000, "ms"
+        count -= 1
+    except Exception, e:
+        print repr(e)
+```
+
+来看 `getEvent` 方法，其中调用了 `readMemory` 方法来获取虚拟机栈内存：
+
+```python
+def getEvent(self, first_fp, fnames, vnames, vtypes, client):
+    # 读取虚拟机栈内存
+    memory = self.readMemory(first_fp - 5000, 6000)
+    ...
+```
+
+跟进 `readMemory` 方法：
+
+```python
+# 栈内存获取模块
+def readMemory(self, address, numBytes):
+    # 获取进程地址空间
+    space = self.currentTask.get_process_address_space()
+    str = space.read(address, numBytes)
+    # address -> memory
+    res1 = {}
+    # memory -> address
+    res2 = {}
+    if str is None:
+        print "none"
+        return None, None
+    for i in range(numBytes / 8):
+        # 转换出内存的整型结果
+        unpack_res = struct.unpack("<Q", str[i * 8 :(i + 1) * 8])
+        res1[address + i * 8] = unpack_res[0]
+        res2[unpack_res[0]] = address + i * 8
+    return res1, res2
+```
+
+`readMemory` 获取内存的方法可以用下面这张图来概括：
+
+![vmstack](others/vmstack.png)
+
+通过 `readMemory` 方法我们就获取到了目标程序中指定线程的虚拟机栈的内存内容
+
+回到 `getEvent` 方法，我们在分析的流程中获取到了栈帧对应方法的方法名、传入参数、方法局部内存等信息，然后通过调用 `getNextFrame` 方法获取下一栈帧，继续分析：
+
+```python
+def getEvent(self, first_fp, fnames, vnames, vtypes, client):
+    memory = self.readMemory(first_fp - 5000, 6000)
+    self.memory = memory
+
+    # 利用获取到的first_fp 初始化 `linux_runtime.py` 中定义的栈帧
+    frame = Frame(first_fp, memory, self)
+    while frame is not None:
+        # 获取该栈帧对应的方法名
+        methodName = frame.getName()
+        if methodName is not None:
+            print methodName, "fp:", hex(frame.fp),
+            if frame.fp in frame.memory[1]:
+                print hex(frame.memory[1][frame.fp])
+            else:
+                print
+        if methodName is not None and methodName in fnames:
+            index = fnames.index(methodName)
+            # 获取栈帧对应的方法中的参数值
+            variables = frame.getLocals(vtypes[index])
+            ...
+        # 获取下一栈帧
+        frame = frame.getNextFrame()
+        if frame is None:
+            print "nextFrame is None"
+    ...
+```
+
+对于编译型栈帧而言，**下一栈帧**的地址内容是**上一栈帧**的 `fp` 地址，所以在 `getNextFrame` 方法中这样实现：
+
+memory[1] 是内容到地址的映射，我们在地址内容中查找当前栈帧的 `fp`，存在的话说明下一栈帧是存在的，而且以 地址内容为key，value就是下一栈帧的 `fp`
+
+```python
+# 分析编译型栈帧也需要在这里添加判断逻辑
+def getNextFrame(self):
+    frame = None
+    if self.memory[1] is not None and self.fp in self.memory[1].keys():
+    # 获取下一栈帧fp
+        nfp = self.memory[1][self.fp]
+        frame = Frame(nfp, self.memory, self.debugger)
+    return frame
+```
+
+至此，我们分析虚拟机栈的流程就打通了
+
+#### 3. 如何分析栈帧对应方法的参数，局部内存？
+
+在 `getEvent` 方法中，我们调用 `getLocals` 方法来分析方法传入参数和局部内存：
+
+```python
+def getEvent(self, first_fp, fnames, vnames, vtypes, client):
+    ...
+    while frame is not None:
+        ...
+        variables = frame.getLocals(vtypes[index])
+    ...
+```
+
+其中 `vtypes` 是这样定义的：
+
+```python
+    # configuration
+    # fname 代表我们要分析的方法名
+    self.fnames = ['func1', 'func2', 'func3', 'func4']
+    # vname 代表方法传入参数的个数和名称
+    self.vnames = [['x', 'y'], ['x', 'y'], ['x', 'y'], ['x', 'y']]
+    # vtypes 代表方法传入参数的类型 1-int，2-long，3-float，4-double
+    self.vtypes = [[1, 1], [2, 2], [3, 3], [4, 4]]
+```
+
+如果需要分析方法的参数、局部变量等信息，需要目标程序中的方法和此处的定义一致，不需要可以注释掉调用 `getLocals` 方法
+
+来看 `getLocals` 方法，从 `fp - 48` 地址开始存放的是方法参数、局部变量，这样我们就成功分析了一个栈帧对应的方法：
+
+```python
+# 得到本地变量
+def getLocals(self, types, static=False):
+    res = []
+    if self.memory[0] is not None and self.fp - 48 in self.memory[0].keys():
+        local = self.memory[0][self.fp - 48]
+        tmp_local = local
+        print 'fp - 48:', hex(self.fp - 48), hex(local)
+        if not static:
+            local -= 8
+        i = 0
+
+        # 从 fp - 48 再 - 72 的地方开始打印内存，获取方法的内存布局
+        while tmp_local != local - 72:
+            value = self.memory[0][tmp_local]
+            print 'Address: ', hex(tmp_local), ' value: ', hex(value)
+            tmp_local -= 8
+
+        while local in self.memory[0].keys() and i < len(types):
+            # 对于long类型和double类型 获取参数值时地址需要再减8
+            if types[i] == 4 or types[i] == 2:
+                local -= 8
+            value = self.memory[0][local]
+            v = self.getVal(value, types[i])
+            print 'GetParam >> Address: ', hex(local), 'Value: ', v
+            res.append(v)
+            # 64位系统中，字长为8字节 即地址与地址之间相差8
+            local -= 8
+            i += 1
+    return res
+
+def getVal(self, value, vtype):
+    # 解析int类型值
+    if vtype == 1:
+        val = int(value)
+        return str(val)
+    # 解析long类型值
+    elif vtype == 2:
+        val = long(value)
+        return str(val)
+    # 解析float类型值 调用JDI包中实现好的接口
+    elif vtype == 3:
+        val = self.debugger.PyDump.jf(int(hex(value)[-8:], 16))
+        return str(val)
+    # 解析double类型值
+    elif vtype == 4:
+        val = self.debugger.PyDump.jd(long(value))
+        return str(val)
+    else:
+        return str(value)
+```
+
+#### 4. 在解析float类型值的时候为什么要写成 `val = self.debugger.PyDump.jf(int(hex(value)[-8:], 16))` ？
+
+在解析float类型的过程中我发现 float类型参数值在内存中存储存在偏差
+
+前几个字节不应该被处理，否则直接将 `173f8ccccd` 解析会超4字节范围：
+
+```txt
+func3 fp: 0x7f12d8e31870L 0x7f12d8e317e8L           func3传入的参数是float类型
+fp - 48: 0x7f12d8e31840L 0x7f12d8e31898
+Address:  0x7f12d8e31898  value:  0xeb4531f8
+Address:  0x7f12d8e31890  value:  0x173f8ccccd      这个地址内容中只有后4字节 3f8ccccd 才是参数值 1.1
+Address:  0x7f12d8e31888  value:  0x7f1240d33333    这个地址内容中只有后4字节 40d33333 才是参数值 6.6
+Address:  0x7f12d8e31880  value:  0x40f66666
+Address:  0x7f12d8e31878  value:  0x7f12cd006058
+Address:  0x7f12d8e31870  value:  0x7f12d8e318e0
+Address:  0x7f12d8e31868  value:  0x7f12d8e31888
+Address:  0x7f12d8e31860  value:  0x7f12d8e31808
+Address:  0x7f12d8e31858  value:  0xfb080b98
+Address:  0x7f12d8e31850  value:  0x0
+
+GetParam >> Address:  0x7f12d8e31890 Value:  1.10000002384
+GetParam >> Address:  0x7f12d8e31888 Value:  6.59999990463
+```
+
+#### 5. 在工程地址 - [这里](https://github.com/theChildinus/JavaMemory#%E5%B7%A5%E7%A8%8B%E7%9B%B8%E5%85%B3%E5%AE%BF%E4%B8%BB%E6%9C%BA%E7%AB%AF) 说明了工程中哪些变量被写死，可以修改为读取配置文件的方式，使这些变量获取更加灵活
 
 ### **TODOLIST**
 
@@ -316,6 +528,8 @@ print 'first_fp:', hex(self.first_fp)
 10. 理解系统界面中配置含义
 
 ### **遇到过的问题和理解**
+
+[参考这里 Q & A](https://github.com/theChildinus/IoTEventMonitorPlatform#q--a)
 
 ### **TODOLIST**
 
