@@ -1,6 +1,169 @@
-# 内存重构部署文档
+# 内存重构文档
 
 [内存重构实现原理解析](Review.md)
+
+## 分析结果
+
+分析运行在虚拟机中的Java程序，包含四个方法 func1，func2，func3，func4和func5
+
+```java
+public void func1(int a, int b) {
+    int var1 = a + b;
+    this.func2(100100010000L, 200200020000L);
+}
+
+public void func2(long a, long b) {
+    long var2 = a + b;
+    this.func3(1.1F, 6.6F);
+}
+
+public void func3(float a, float b) {
+    float var3 = a + b;
+    this.func4(7.7D, 9.9D);
+}
+
+public void func4(double a, double b) {
+    double var4 = a + b;
+    this.func5();
+}
+
+public int func5() {
+    int m = 100;
+    byte n = 88;
+
+    try {
+        Thread.sleep(1000L);
+    } catch (InterruptedException e) {
+        e.printStackTrace();
+    }
+
+    return m + n;
+}
+```
+
+```txt
+Volatility Foundation Volatility Framework 2.6
+>>>>>> render_test >>>>>>
+
+获取到虚拟机中运行的Java程序的pid
+task.pid is  2313
+INFO    : paramiko.transport  : Connected (version 2.0, client OpenSSH_7.2p2)
+INFO    : paramiko.transport  : Authentication (publickey) failed.
+INFO    : paramiko.transport  : Authentication (publickey) failed.
+INFO    : paramiko.transport  : Authentication (password) successful!
+
+pyagent.jar return yes
+虚拟机中JVM启动所需的共享库名称及偏移地址
+base: 0x400000L name: /home/vm/jdk1.7.0_79/bin/java
+base: 0x7f12d6008000L name: /home/vm/jdk1.7.0_79/jre/lib/amd64/libzip.so
+base: 0x7f12d6223000L name: /lib/x86_64-linux-gnu/libnss_files-2.23.so
+base: 0x7f12d6435000L name: /lib/x86_64-linux-gnu/libnss_nis-2.23.so
+base: 0x7f12d6641000L name: /lib/x86_64-linux-gnu/libnsl-2.23.so
+base: 0x7f12d685a000L name: /lib/x86_64-linux-gnu/libnss_compat-2.23.so
+base: 0x7f12d6a63000L name: /home/vm/jdk1.7.0_79/jre/lib/amd64/libjava.so
+base: 0x7f12d6c8e000L name: /home/vm/jdk1.7.0_79/jre/lib/amd64/libverify.so
+base: 0x7f12d6e9c000L name: /lib/x86_64-linux-gnu/librt-2.23.so
+base: 0x7f12d70a4000L name: /lib/x86_64-linux-gnu/libm-2.23.so
+base: 0x7f12d73ad000L name: /home/vm/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so
+base: 0x7f12d8227000L name: /lib/x86_64-linux-gnu/libc-2.23.so
+base: 0x7f12d85f1000L name: /lib/x86_64-linux-gnu/libdl-2.23.so
+base: 0x7f12d87f5000L name: /home/vm/jdk1.7.0_79/lib/amd64/jli/libjli.so
+base: 0x7f12d8a0c000L name: /lib/x86_64-linux-gnu/libpthread-2.23.so
+base: 0x7f12d8c29000L name: /lib/x86_64-linux-gnu/ld-2.23.so
+[2313L, 2314L, 2315L, 2316L, 2317L, 2318L, 2319L, 2320L, 2321L, 2322L]
+
+JVM中的所有线程：
+2019-01-22 21:20:07 INFO sun.tools.python.PyTool initThread Service Thread
+2019-01-22 21:20:08 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-01-22 21:20:08 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-01-22 21:20:08 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-01-22 21:20:08 INFO sun.tools.python.PyTool initThread Finalizer
+2019-01-22 21:20:08 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-01-22 21:20:08 INFO sun.tools.python.PyTool initThread main
+2019-01-22 21:20:08 INFO sun.tools.python.PyTool initThread find Thread: main
+2019-01-22 21:20:09 INFO sun.tools.python.PyTool initJavaFirstFPAddress count: 7
+
+main线程虚拟机栈的栈底地址
+first_fp: 0x7f12d8e319d8L
+
+开始分析
+===== START ===== 3061
+#######################
+main fp: 0x7f12d8e319d8L 0x7f12d8e31968L
+
+函数 func1 对应的栈帧地址
+func1 fp: 0x7f12d8e31968L 0x7f12d8e318e0L
+fp - 48: 0x7f12d8e31938L 0x7f12d8e31990
+Address:  0x7f12d8e31990  value:  0xeb4531f8
+Address:  0x7f12d8e31988  value:  0x1       // 函数参数 int a
+Address:  0x7f12d8e31980  value:  0x2       // 函数参数 int b
+Address:  0x7f12d8e31978  value:  0x3       // 局部变量 int var1
+Address:  0x7f12d8e31970  value:  0x7f12cd006058
+Address:  0x7f12d8e31968  value:  0x7f12d8e319d8
+Address:  0x7f12d8e31960  value:  0x7f12d8e31980
+Address:  0x7f12d8e31958  value:  0x7f12d8e31900
+Address:  0x7f12d8e31950  value:  0xfb080988
+Address:  0x7f12d8e31948  value:  0x0
+GetParam >> Address:  0x7f12d8e31988 Value:  1
+GetParam >> Address:  0x7f12d8e31980 Value:  2
+
+函数 func2 对应的栈帧地址
+func2 fp: 0x7f12d8e318e0L 0x7f12d8e31870L
+fp - 48: 0x7f12d8e318b0L 0x7f12d8e31920
+Address:  0x7f12d8e31920  value:  0xeb4531f8
+Address:  0x7f12d8e31918  value:  0xc6b9f
+Address:  0x7f12d8e31910  value:  0x174e6cf010   // 函数参数 long a
+Address:  0x7f12d8e31908  value:  0x7f12d7bc8423
+Address:  0x7f12d8e31900  value:  0x2e9cd9e020   // 函数参数 long b
+Address:  0x7f12d8e318f8  value:  0x0
+Address:  0x7f12d8e318f0  value:  0x45eb46d030   // 局部变量 long var2
+Address:  0x7f12d8e318e8  value:  0x7f12cd006058
+Address:  0x7f12d8e318e0  value:  0x7f12d8e31968
+Address:  0x7f12d8e318d8  value:  0x7f12d8e31900
+GetParam >> Address:  0x7f12d8e31910 Value:  100100010000
+GetParam >> Address:  0x7f12d8e31900 Value:  200200020000
+
+函数 func2 对应的栈帧地址
+func3 fp: 0x7f12d8e31870L 0x7f12d8e317e8L
+fp - 48: 0x7f12d8e31840L 0x7f12d8e31898
+Address:  0x7f12d8e31898  value:  0xeb4531f8
+Address:  0x7f12d8e31890  value:  0x173f8ccccd    // 函数参数 float a
+Address:  0x7f12d8e31888  value:  0x7f1240d33333  // 函数参数 float b
+Address:  0x7f12d8e31880  value:  0x40f66666      // 局部变量 float var3
+Address:  0x7f12d8e31878  value:  0x7f12cd006058
+Address:  0x7f12d8e31870  value:  0x7f12d8e318e0
+Address:  0x7f12d8e31868  value:  0x7f12d8e31888
+Address:  0x7f12d8e31860  value:  0x7f12d8e31808
+Address:  0x7f12d8e31858  value:  0xfb080b98
+Address:  0x7f12d8e31850  value:  0x0
+GetParam >> Address:  0x7f12d8e31890 Value:  1.10000002384
+GetParam >> Address:  0x7f12d8e31888 Value:  6.59999990463
+
+函数 func4 对应的栈帧地址
+func4 fp: 0x7f12d8e317e8L 0x7f12d8e31778L
+fp - 48: 0x7f12d8e317b8L 0x7f12d8e31828
+Address:  0x7f12d8e31828  value:  0xeb4531f8
+Address:  0x7f12d8e31820  value:  0x7f12d0009800
+Address:  0x7f12d8e31818  value:  0x401ecccccccccccd // 函数参数 double a
+Address:  0x7f12d8e31810  value:  0x7f12d000a128
+Address:  0x7f12d8e31808  value:  0x4023cccccccccccd // 函数参数 double b
+Address:  0x7f12d8e31800  value:  0x0
+Address:  0x7f12d8e317f8  value:  0x403199999999999a // 局部变量 double var4
+Address:  0x7f12d8e317f0  value:  0x7f12cd006058
+Address:  0x7f12d8e317e8  value:  0x7f12d8e31870
+Address:  0x7f12d8e317e0  value:  0x7f12d8e31808
+GetParam >> Address:  0x7f12d8e31818 Value:  7.7
+GetParam >> Address:  0x7f12d8e31808 Value:  9.9
+
+函数 func5 对应的栈帧地址
+func5 fp: 0x7f12d8e31778L 0x7f12d8e31708L
+sleep fp: 0x7f12d8e31708L 0x7f12d8e316a0L
+sleep fp: 0x7f12d8e316a0L 0x7f12d8e31600L
+nextFrame is None
+start, end:  14.645319 , 14.907558
+Durning:  262.239 ms
+#######################
+```
 
 ## 宿主机
 

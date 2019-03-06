@@ -98,14 +98,18 @@ class linux_runtime_c(linux_common.AbstractLinuxCommand):
     def calculate(self):
         linux_common.set_plugin_members(self)
 
-        pidlist = self._config.PID
-        if pidlist:
-            pidlist = [int(p) for p in self._config.PID.split(',')]
+        # pidlist = self._config.PID
+        # if pidlist:
+        #     pidlist = [int(p) for p in self._config.PID.split(',')]
 
+        #依次获取进程 直到获取参数指定的进程
+        process_name = "java"
         tasks = []
         for task in self.allprocs():
-            if not pidlist or task.pid in pidlist:
+            # if not pidlist or task.pid in pidlist:
+            if str(task.comm) in process_name:
                 tasks.append(task)
+        tasks.sort()
         return tasks
 
     def read(self, task, addr, num):
@@ -127,11 +131,11 @@ class linux_runtime_c(linux_common.AbstractLinuxCommand):
         return ans
 
     def render_text(self, outfd, data):
-        local_conf = Conf()
-        local_conf.config_no()
-        local_conf.start()
+        # local_conf = Conf()
+        # local_conf.config_no()
+        # local_conf.start()
 
-        j_test_path = '-Djava.class.path=/root/JDI.jar'
+        j_test_path = '-Djava.class.path=/home/kong/JavaMemory/JDI/out/artifacts/JDI/JDI.jar'
         jpype.startJVM(jpype.getDefaultJVMPath(), j_test_path)
         tasks = self.calculate()
 
@@ -147,7 +151,7 @@ class linux_runtime_c(linux_common.AbstractLinuxCommand):
         self.vtypes = [[4, 4], [4, 4]]
 
         # ssh
-        hostname = '10.108.164.154'
+        hostname = '10.108.164.232'
         port = 22
         username = 'root'
         password = '123456'
@@ -241,10 +245,16 @@ class linux_runtime_c(linux_common.AbstractLinuxCommand):
         #     finally:
         #         client.close()
         # tcpSocket.close()
+        # self.conf = Conf()
+        # self.conf.config_c(self.run_command, self.stop_command)
+        # self.conf.start()
 
-        self.conf = Conf()
-        self.conf.config_c(self.run_command, self.stop_command)
-        self.conf.start()
+        count = 10
+        while count > 0:
+            print "#######################"
+            for first_fp in self.first_fp_list:
+                inf = self.getEvent(first_fp, self.fnames, self.vnames, self.vtypes, self.client)
+            count -= 1
 
         PyDump.stop()
         jpype.shutdownJVM()
@@ -259,12 +269,17 @@ class linux_runtime_c(linux_common.AbstractLinuxCommand):
         self.conf.stop()
 
     def getEvent(self, first_fp, fnames, vnames, vtypes, client):
-        memory = self.readMemory(first_fp - 2000, 3000)
+        memory = self.readMemory(first_fp - 5000, 6000)
         frame = Frame(first_fp, memory, self)
         inf = ''
         while frame is not None:
             methodName = frame.getName()
-            if methodName is not None and methodName in fnames:
+            if methodName is not None:
+                print methodName, "fp:", hex(frame.fp),
+                if frame.fp in frame.memory[1]:
+                    print hex(frame.memory[1][frame.fp])
+                else:
+                    print
                 inf += '->'
                 index = fnames.index(methodName)
                 variables = frame.getLocals(vtypes[index])
@@ -283,6 +298,8 @@ class linux_runtime_c(linux_common.AbstractLinuxCommand):
                 inf += '->'
                 inf += methodName
             frame = frame.getNextFrame()
+            if frame is None:
+                print "nextFrame is None"
         return inf
 
     def getThreadsId(self):

@@ -27,7 +27,7 @@
 
 在Linux系统中，所有的进程是通过链表来管理的，对于每一个进程都有一个进程描述符 `task_struct`，其中包含了当前进程的所有信息。在系统启动初期链表中只有 `init_task` 这一个进程，它是内核的第一个进程，由于其在linux系统中的特殊性，可以再内核符号表中查找到它的逻辑地址，然后我们通过遍历进程链表便可以找到目标进程。
 
-Linux中记录内核符号表的文件分为两各部分，首先是静态部分，也就是内核文件映像 `vmlinux` 部分的符号表，另外一部分是Linux可配置部分的符号表，两者分别对应 `/proc/ksyms` 和 `System.map` 这两个文件，其中 `System.map` 文件记录了 `init_task` 进程的逻辑地址，想要获取进程的详细信息我们还需要知道 `task_struct` 的结构，在Linux中，`kernel-header` 源码通过 `dwarfdump` 生成的 `module.dwarf` 文件中会包含很多内核数据结构，这个文件和 `System.map` 被我们一起打包在 `profile` 中供 `Volatility` 框架使用
+Linux中记录内核符号表的文件分为两个部分，首先是静态部分，也就是内核文件映像 `vmlinux` 部分的符号表，另外一部分是Linux可配置部分的符号表，两者分别对应 `/proc/ksyms` 和 `System.map` 这两个文件，其中 `System.map` 文件记录了 `init_task` 进程的逻辑地址，想要获取进程的详细信息我们还需要知道 `task_struct` 的结构，在Linux中，`kernel-header` 源码通过 `dwarfdump` 生成的 `module.dwarf` 文件中会包含很多内核数据结构，这个文件和 `System.map` 被我们一起打包在 `profile` 中供 `Volatility` 框架使用
 
 在 `Volatility` 框架中，所有插件程序的入口位置是：
 
@@ -185,7 +185,7 @@ public interface PythonMethodInterface {
 
 这些接口在类 `sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal` 中被使用
 
-这样我们通过 `Volatility` 获取到的进程信息为 `Serviceability Agent` 的初始化提供了便利，也让 `Serviceability Agent` 所分析的进程是我们所指定的目标程序
+这样我们通过 `Volatility` 获取到的JVM进程信息为 `Serviceability Agent` 的初始化提供了便利，也让 `Serviceability Agent` 所分析的进程是我们所指定的目标程序
 
 我们在工程 [JavaMemory - JDI](https://github.com/theChildinus/JavaMemory/tree/master/JDI) 中重写了 `Serviceability Agent` 的初始化流程，并使用其定义好的类、接口实现了一些方法用于分析堆栈信息，这些方法统一封装在 `sun.tools.python.PyDump` 类中供 python 部分调用：
 
