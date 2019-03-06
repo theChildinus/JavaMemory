@@ -123,7 +123,7 @@ Address:  0x7f12d8e318d8  value:  0x7f12d8e31900
 GetParam >> Address:  0x7f12d8e31910 Value:  100100010000
 GetParam >> Address:  0x7f12d8e31900 Value:  200200020000
 
-函数 func2 对应的栈帧地址
+函数 func3 对应的栈帧地址
 func3 fp: 0x7f12d8e31870L 0x7f12d8e317e8L
 fp - 48: 0x7f12d8e31840L 0x7f12d8e31898
 Address:  0x7f12d8e31898  value:  0xeb4531f8
@@ -165,7 +165,7 @@ Durning:  262.239 ms
 #######################
 ```
 
-## 宿主机
+## 宿主机端配置
 
 ### volatility需要安装的包
 
@@ -209,7 +209,7 @@ Durning:  262.239 ms
     - sudo python setup.py install
     - ldconfig
 
-## 虚拟机
+## 虚拟机端配置
 
 1. [**安装jdk 配置jdk**](https://blog.csdn.net/rflyee/article/details/8989663)
 2. 分析Java程序需导入
