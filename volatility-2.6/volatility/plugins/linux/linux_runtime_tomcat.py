@@ -47,7 +47,7 @@ def ssh_cmd(hostname, port, username, password, cmd):
     return result
 
 
-class linux_runtime_c(linux_common.AbstractLinuxCommand):
+class linux_runtime_tomcat(linux_common.AbstractLinuxCommand):
     """Gather active tasks by walking the task_struct->task list"""
 
     def __init__(self, config, *args, **kwargs):
@@ -102,7 +102,6 @@ class linux_runtime_c(linux_common.AbstractLinuxCommand):
         # if pidlist:
         #     pidlist = [int(p) for p in self._config.PID.split(',')]
 
-        #依次获取进程 直到获取参数指定的进程
         process_name = "java"
         tasks = []
         for task in self.allprocs():
@@ -156,7 +155,7 @@ class linux_runtime_c(linux_common.AbstractLinuxCommand):
         username = 'root'
         password = '123456'
 
-        cmd = 'java -jar pyagent.jar ' + str(task.pid)
+        cmd = 'java -jar /home/vm/pyagent.jar ' + str(task.pid)
         ssh_res = ssh_cmd(hostname=hostname, port=port, username=username, password=password, cmd=cmd)
         if 'yes' not in ssh_res:
             print ssh_res
@@ -192,8 +191,11 @@ class linux_runtime_c(linux_common.AbstractLinuxCommand):
         self.currentTask = task
         self.libs = libs
         self.symbolDict = {}
-        symbol = volatility.plugins.linux.java.readelf.read_sym_offset("/usr/local/development/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so")
-        self.symbolDict["/usr/local/development/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so"] = symbol
+        # symbol = volatility.plugins.linux.java.readelf.read_sym_offset("/usr/local/development/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so")
+        # self.symbolDict["/usr/local/development/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so"] = symbol
+        symbol = volatility.plugins.linux.java.readelf.read_sym_offset(
+            "/home/kong/JavaMemory/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so")
+        self.symbolDict["/home/vm/jdk1.7.0_79/jre/lib/amd64/server/libjvm.so"] = symbol
         PyDump = jpype.JPackage('sun.tools.python').PyDump
         self.PyDump = PyDump
         method_dict = {
@@ -209,7 +211,7 @@ class linux_runtime_c(linux_common.AbstractLinuxCommand):
         PyDump.initVM(jp, int(task.pid))
         self.first_fp_list = []
         for index in range(1, 11):
-            threadName = 'http-bio-8080-exec-' + str(index)
+            threadName = 'http-nio-8080-exec-' + str(index)
             first_fp = PyDump.initJavaFirstFPAddress(threadName, True)
             self.first_fp_list.append(first_fp)
             print threadName, first_fp

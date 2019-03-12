@@ -937,3 +937,1022 @@
 2019-01-25 15:37:26 INFO sun.tools.python.PyTool initThread main
 2019-01-25 15:37:26 INFO sun.tools.python.PyTool initThread find Thread: main
 2019-01-25 15:37:28 INFO sun.tools.python.PyTool initJavaFirstFPAddress count: 7
+2019-02-26 11:36:05 INFO sun.tools.python.PyTool initThread DestroyJavaVM
+2019-02-26 11:36:05 INFO sun.tools.python.PyTool initThread ExampleSubThread
+2019-02-26 11:36:05 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-26 11:36:05 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-26 11:36:05 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-26 11:36:05 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-26 11:36:06 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-26 11:36:06 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-26 11:46:20 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-02-26 11:46:30 INFO sun.tools.python.PyTool initThread DestroyJavaVM
+2019-02-26 11:46:30 INFO sun.tools.python.PyTool initThread ExampleSubThread
+2019-02-26 11:46:31 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-26 11:46:31 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-26 11:46:31 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-26 11:46:31 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-26 11:46:31 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-26 11:46:31 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-26 11:52:41 INFO sun.tools.python.PyBugSpotAgent attach class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-02-26 11:52:41 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-02-26 11:52:51 INFO sun.tools.python.PyTool initThread DestroyJavaVM
+2019-02-26 11:52:51 INFO sun.tools.python.PyTool initThread ExampleSubThread
+2019-02-26 11:52:52 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-26 11:52:52 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-26 11:52:52 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-26 11:52:52 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-26 11:52:52 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-26 11:52:52 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-26 14:23:45 INFO sun.tools.python.PyBugSpotAgent attach class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-02-26 14:23:45 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-02-26 14:25:17 INFO sun.tools.python.PyBugSpotAgent attach class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-02-26 14:25:17 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-02-26 14:25:27 INFO sun.tools.python.PyTool initThread DestroyJavaVM
+2019-02-26 14:25:27 INFO sun.tools.python.PyTool initThread ExampleSubThread
+2019-02-26 14:25:27 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-26 14:25:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-26 14:25:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-26 14:25:27 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-26 14:25:27 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-26 14:25:28 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:23:50 INFO sun.tools.python.PyBugSpotAgent attach class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-02-28 21:23:50 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-02-28 21:24:01 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:24:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:24:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:24:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:24:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:24:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:24:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:24:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:24:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:24:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:24:03 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:24:03 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:24:03 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:24:03 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:24:03 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:24:03 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:24:03 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:24:03 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:24:03 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:24:03 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:24:03 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:24:04 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:24:04 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:24:04 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:24:04 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:24:04 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:24:04 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:24:05 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:24:05 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:24:05 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:24:06 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:24:06 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:24:06 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:24:06 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:24:06 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:24:06 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:24:06 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:24:06 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:24:06 INFO sun.tools.python.PyTool initThread find Thread: main
+2019-02-28 21:24:08 INFO sun.tools.python.PyTool initJavaFirstFPAddress count: 13
+2019-02-28 21:42:08 INFO sun.tools.python.PyBugSpotAgent attach class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-02-28 21:42:08 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-02-28 21:42:21 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:42:21 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:42:21 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:42:21 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:42:22 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:42:22 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:42:22 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:42:23 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:42:24 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:42:24 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:42:24 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:42:24 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:42:24 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:42:24 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:42:25 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:42:25 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:42:25 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:42:25 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:42:25 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:42:26 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:42:26 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:42:26 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:42:26 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:42:26 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:42:27 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:43:50 INFO sun.tools.python.PyBugSpotAgent attach class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-02-28 21:43:50 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-02-28 21:44:01 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:44:01 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:44:01 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:44:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:44:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:44:02 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:44:03 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:44:04 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:44:04 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:44:04 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:44:04 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:44:04 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:44:04 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:44:05 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:44:05 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:44:05 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:44:05 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:44:06 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:44:06 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:44:06 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:44:06 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:44:06 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:44:07 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:45:47 INFO sun.tools.python.PyBugSpotAgent attach class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-02-28 21:45:47 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-02-28 21:45:57 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:45:58 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:45:58 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:45:59 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:45:59 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:45:59 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:45:59 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:45:59 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:46:00 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:46:01 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:46:01 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:46:01 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:46:02 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:46:02 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:46:02 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:46:02 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:46:02 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:46:02 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:46:03 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:46:03 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:46:03 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:46:03 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:46:03 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:48:00 INFO sun.tools.python.PyBugSpotAgent attach class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-02-28 21:48:00 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-02-28 21:48:11 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:48:11 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:48:11 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:48:12 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:48:12 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:48:12 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:48:13 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:48:14 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:48:14 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:48:14 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:48:14 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:48:14 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:48:14 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:48:14 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:48:14 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:48:15 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:48:15 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:48:15 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:48:15 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:48:16 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:48:16 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:48:16 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:48:16 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:48:16 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:48:16 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:48:17 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:48:54 INFO sun.tools.python.PyBugSpotAgent attach class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-02-28 21:48:54 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-02-28 21:49:05 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 21:49:05 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 21:49:05 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 21:49:06 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 21:49:06 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 21:49:06 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 21:49:06 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 21:49:06 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 21:49:06 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 21:49:07 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 21:49:08 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 21:49:08 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 21:49:08 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 21:49:08 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 21:49:08 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 21:49:08 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 21:49:09 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 21:49:09 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 21:49:09 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 21:49:09 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 21:49:09 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 21:49:10 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 21:49:10 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 21:49:10 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 21:49:10 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 21:49:10 INFO sun.tools.python.PyTool initThread main
+2019-02-28 21:49:10 INFO sun.tools.python.PyTool initThread find Thread: http-nio-8080-exec-10
+2019-02-28 21:49:11 INFO sun.tools.python.PyTool initJavaFirstFPAddress count: 11
+2019-02-28 23:12:55 INFO sun.tools.python.PyBugSpotAgent attach class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-02-28 23:12:55 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-02-28 23:13:19 INFO sun.tools.python.PyTool initThread ajp-nio-8009-AsyncTimeout
+2019-02-28 23:13:19 INFO sun.tools.python.PyTool initThread ajp-nio-8009-Acceptor-0
+2019-02-28 23:13:19 INFO sun.tools.python.PyTool initThread ajp-nio-8009-ClientPoller-0
+2019-02-28 23:13:20 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-10
+2019-02-28 23:13:20 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-9
+2019-02-28 23:13:20 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-8
+2019-02-28 23:13:20 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-7
+2019-02-28 23:13:20 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-6
+2019-02-28 23:13:21 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-5
+2019-02-28 23:13:21 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-4
+2019-02-28 23:13:21 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-3
+2019-02-28 23:13:21 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-2
+2019-02-28 23:13:21 INFO sun.tools.python.PyTool initThread ajp-nio-8009-exec-1
+2019-02-28 23:13:21 INFO sun.tools.python.PyTool initThread http-nio-8080-AsyncTimeout
+2019-02-28 23:13:21 INFO sun.tools.python.PyTool initThread http-nio-8080-Acceptor-0
+2019-02-28 23:13:21 INFO sun.tools.python.PyTool initThread http-nio-8080-ClientPoller-0
+2019-02-28 23:13:23 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-10
+2019-02-28 23:13:23 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-9
+2019-02-28 23:13:23 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-8
+2019-02-28 23:13:23 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-7
+2019-02-28 23:13:23 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-6
+2019-02-28 23:13:24 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-5
+2019-02-28 23:13:24 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-4
+2019-02-28 23:13:24 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-3
+2019-02-28 23:13:25 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-2
+2019-02-28 23:13:25 INFO sun.tools.python.PyTool initThread http-nio-8080-exec-1
+2019-02-28 23:13:25 INFO sun.tools.python.PyTool initThread ContainerBackgroundProcessor[StandardEngine[Catalina]]
+2019-02-28 23:13:26 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-2
+2019-02-28 23:13:26 INFO sun.tools.python.PyTool initThread NioBlockingSelector.BlockPoller-1
+2019-02-28 23:13:27 INFO sun.tools.python.PyTool initThread GC Daemon
+2019-02-28 23:13:28 INFO sun.tools.python.PyTool initThread AsyncFileHandlerWriter-1783184229
+2019-02-28 23:13:28 INFO sun.tools.python.PyTool initThread Service Thread
+2019-02-28 23:13:28 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-02-28 23:13:29 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-02-28 23:13:29 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-02-28 23:13:29 INFO sun.tools.python.PyTool initThread Finalizer
+2019-02-28 23:13:29 INFO sun.tools.python.PyTool initThread Reference Handler
+2019-02-28 23:13:29 INFO sun.tools.python.PyTool initThread main
+2019-02-28 23:13:29 INFO sun.tools.python.PyTool initThread find Thread: http-nio-8080-exec-10
+2019-02-28 23:13:31 INFO sun.tools.python.PyTool initJavaFirstFPAddress count: 11
+2019-03-08 22:06:17 INFO sun.tools.python.PyBugSpotAgent attach class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-03-08 22:06:17 INFO sun.tools.python.PyBugSpotAgent attach sun.misc.Launcher$AppClassLoader@c387f44
+2019-03-08 22:06:26 INFO sun.tools.python.PyTool initThread DestroyJavaVM
+2019-03-08 22:06:26 INFO sun.tools.python.PyTool initThread ExampleSubThread
+2019-03-08 22:06:26 INFO sun.tools.python.PyTool initThread Service Thread
+2019-03-08 22:06:26 INFO sun.tools.python.PyTool initThread C2 CompilerThread1
+2019-03-08 22:06:26 INFO sun.tools.python.PyTool initThread C2 CompilerThread0
+2019-03-08 22:06:26 INFO sun.tools.python.PyTool initThread Signal Dispatcher
+2019-03-08 22:06:27 INFO sun.tools.python.PyTool initThread Finalizer
+2019-03-08 22:06:27 INFO sun.tools.python.PyTool initThread Reference Handler

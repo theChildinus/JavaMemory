@@ -53,7 +53,7 @@ INFO    : paramiko.transport  : Authentication (publickey) failed.
 INFO    : paramiko.transport  : Authentication (password) successful!
 
 pyagent.jar return yes
-虚拟机中JVM启动所需的共享库名称及偏移地址
+虚拟机中JVM启动所需的共享库名称及起始地址
 base: 0x400000L name: /home/vm/jdk1.7.0_79/bin/java
 base: 0x7f12d6008000L name: /home/vm/jdk1.7.0_79/jre/lib/amd64/libzip.so
 base: 0x7f12d6223000L name: /lib/x86_64-linux-gnu/libnss_files-2.23.so
@@ -214,7 +214,7 @@ Durning:  262.239 ms
 1. [**安装jdk 配置jdk**](https://blog.csdn.net/rflyee/article/details/8989663)
 2. 分析Java程序需导入
    - pyagent.jar
-   - Test.jar
+   - ThreadTest.jar
 3. 分析C程序需导入
    - buffer_overflow_attack文件夹
 
@@ -266,7 +266,7 @@ IDEA中打JDI包方法[参考](https://www.jianshu.com/p/2e06dd2ea4da)，要将�
 
 ### 分析Java程序
 
-1. 虚拟机执行命令 `java -jar -Xint Test.jar` 运行测试程序
+1. 虚拟机执行命令 `java -cp ThreadTest.jar FuncTest` 运行测试程序
 2. 虚拟机另开终端 执行命令jps 获取jar对应的 `线程号` 并执行命令 `sudo java -jar pyagent.jar 线程号`
 3. 宿主机 添加配置参数为 `-l vmi://ubuntu --profile=LinuxUbuntu1604_内核版本号x64 linux_runtime -p 测试程序进程号` 并运行
 

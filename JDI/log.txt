@@ -1,0 +1,2 @@
+2019-02-26 11:57:24 INFO sun.tools.python.PyBugSpotAgent main class sun.jvm.hotspot.debugger.linux.LinuxDebuggerLocal
+2019-02-26 11:57:24 INFO sun.tools.python.PyBugSpotAgent main sun.misc.Launcher$AppClassLoader@5bdf59bd
